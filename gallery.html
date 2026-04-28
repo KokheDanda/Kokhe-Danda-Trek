@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:title" content="Kokhe Danda Trek – Discover Parbat" />
+<meta property="og:description" content="Gallery – Kokhe Danda Trek" />
+<meta property="og:image" content="https://yourwebsite.com/kokhe.jpg" />
+
+  <title>Gallery – Kokhe Danda Trek</title>
+  <meta name="description" content="Discover the Kokhe Danda Trek in Parbat, Nepal — a hidden ridge trail through rhododendron forests with stunning Dhaulagiri and Annapurna views." />
+<meta name="keywords" content="Kokhe Danda Trek,Kokhe Danda Trek Photos, Parbat trekking, Nepal off the beaten path, Discover Parbat, Dhaulagiri views, Annapurna trek" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --forest:    #1a2e1a;
+      --pine:      #2c4a2c;
+      --moss:      #4a6741;
+      --fern:      #6b8f5e;
+      --sage:      #a3b899;
+      --mist:      #dce8d5;
+      --cream:     #f5f0e8;
+      --parchment: #ede5d4;
+      --trail:     #8b6914;
+      --amber:     #c8901f;
+      --gold:      #e8b84b;
+      --rock:      #6b5d4f;
+      --snow:      #f8f5ef;
+      --charcoal:  #2a2420;
+      --transition: 0.28s ease;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Crimson Pro', Georgia, serif;
+      background: var(--forest);
+      color: var(--cream);
+      overflow-x: hidden;
+    }
+
+    /* GRAIN */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 9999;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.35;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 3rem;
+      height: 68px;
+      background: rgba(13,22,13,0.97);
+      backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(163,184,153,0.1);
+    }
+
+    .logo { display: flex; flex-direction: column; line-height: 1; text-decoration: none; }
+    .logo-main {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem; font-weight: 900;
+      letter-spacing: 0.06em; color: var(--gold);
+      text-transform: uppercase;
+    }
+    .logo-sub {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem; letter-spacing: 0.22em;
+      color: var(--sage); text-transform: uppercase; margin-top: 2px;
+    }
+
+    .nav-links { display: flex; gap: 2.2rem; list-style: none; align-items: center; }
+    .nav-links a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem; letter-spacing: 0.18em;
+      text-transform: uppercase; text-decoration: none;
+      color: var(--mist); transition: color 0.25s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute; bottom: -3px; left: 0; right: 0;
+      height: 1px; background: var(--gold);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--gold); }
+    .nav-links a.active::after,
+    .nav-links a:hover::after { transform: scaleX(1); }
+
+    .nav-book {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem; letter-spacing: 0.15em;
+      text-transform: uppercase; text-decoration: none;
+      color: var(--charcoal); background: var(--gold);
+      padding: 0.5rem 1.2rem; border-radius: 2px;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .nav-book:hover { background: var(--amber); transform: translateY(-1px); }
+
+    /* FLOATING BOOK BTN */
+    .float-book {
+      position: fixed; bottom: 2rem; right: 2rem;
+      z-index: 500;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+      text-decoration: none;
+      background: var(--amber); color: var(--charcoal);
+      padding: 0.75rem 1.4rem; border-radius: 100px;
+      box-shadow: 0 6px 28px rgba(200,144,31,0.45);
+      transition: transform 0.25s, box-shadow 0.25s;
+      animation: floatPulse 3s ease-in-out infinite;
+    }
+    .float-book:hover { transform: translateY(-3px) scale(1.04); box-shadow: 0 10px 36px rgba(200,144,31,0.55); }
+    @keyframes floatPulse {
+      0%,100% { box-shadow: 0 6px 28px rgba(200,144,31,0.45); }
+      50%      { box-shadow: 0 6px 36px rgba(200,144,31,0.65); }
+    }
+
+    /* ── GALLERY HERO ── */
+    .gallery-hero {
+      padding-top: 68px;
+      position: relative;
+      height: 48vh; min-height: 320px;
+      display: flex; align-items: flex-end;
+      overflow: hidden;
+    }
+
+    .gallery-hero-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(160deg, #0d1a0d 0%, #1a2e1a 40%, #243b24 70%, #1e3318 100%);
+    }
+
+    .hero-ridge-svg {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      width: 100%; pointer-events: none; opacity: 0.18;
+    }
+
+    .mist-hero {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 200px;
+      background: linear-gradient(to top, rgba(220,232,213,0.07) 0%, transparent 100%);
+      animation: driftMist 12s ease-in-out infinite alternate;
+    }
+    @keyframes driftMist {
+      from { transform: translateX(-14px); }
+      to   { transform: translateX(14px); }
+    }
+
+    .stars-hero {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        radial-gradient(1px 1px at 12% 15%, rgba(255,255,240,0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 38% 9%, rgba(255,255,240,0.4) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 72% 12%, rgba(255,255,240,0.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 88% 7%, rgba(255,255,240,0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 20%, rgba(255,255,240,0.3) 0%, transparent 100%),
+        radial-gradient(1px 1px at 22% 28%, rgba(255,255,240,0.4) 0%, transparent 100%);
+    }
+
+    .gallery-hero-content {
+      position: relative; z-index: 5;
+      padding: 0 3rem 3rem;
+      animation: fadeUp 1s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem; letter-spacing: 0.3em;
+      text-transform: uppercase; color: var(--gold);
+      display: flex; align-items: center; gap: 0.7rem;
+      margin-bottom: 0.8rem;
+    }
+    .hero-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+
+    .gallery-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      font-weight: 900; line-height: 0.95;
+      color: var(--snow);
+    }
+    .gallery-hero h1 em { font-style: italic; color: var(--gold); }
+
+    .hero-sub {
+      font-size: 1.1rem; font-weight: 300; color: var(--mist);
+      margin-top: 1rem; max-width: 460px; line-height: 1.7;
+    }
+
+    /* ── FILTER BAR ── */
+    .filter-bar {
+      background: var(--pine);
+      border-bottom: 1px solid rgba(107,143,94,0.2);
+      padding: 1.2rem 3rem;
+      position: sticky; top: 68px; z-index: 100;
+    }
+
+    .filter-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1.5rem; flex-wrap: wrap;
+    }
+
+    .filter-groups { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+    .filter-btn {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem; letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border: 1px solid rgba(163,184,153,0.3);
+      background: transparent; color: var(--sage);
+      padding: 0.4rem 1rem; border-radius: 100px;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+    .filter-btn:hover { border-color: var(--sage); color: var(--mist); }
+    .filter-btn.active {
+      background: var(--gold); border-color: var(--gold);
+      color: var(--charcoal);
+    }
+
+    .filter-count {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem; letter-spacing: 0.12em;
+      color: rgba(163,184,153,0.5);
+      white-space: nowrap;
+    }
+    .filter-count span { color: var(--gold); }
+
+    /* ── MAIN GALLERY ── */
+    .gallery-section {
+      padding: 4rem 0 7rem;
+      background: var(--forest);
+    }
+
+    .gallery-inner {
+      max-width: 1120px; margin: 0 auto; padding: 0 3rem;
+    }
+
+    /* Masonry-style grid */
+    .masonry {
+      columns: 3;
+      column-gap: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      .masonry { columns: 2; }
+    }
+    @media (max-width: 560px) {
+      .masonry { columns: 1; }
+    }
+
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1rem;
+      position: relative;
+      border-radius: 3px; overflow: hidden;
+      cursor: pointer;
+      border: 1px solid rgba(107,143,94,0.15);
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s;
+    }
+    .masonry-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.55);
+      border-color: rgba(232,184,75,0.3);
+    }
+
+    .masonry-item img {
+      display: block; width: 100%; height: auto;
+      transition: transform 0.55s ease;
+    }
+    .masonry-item:hover img { transform: scale(1.04); }
+
+    /* Placeholder "image" cells using CSS gradients when no real images exist */
+    .photo-placeholder {
+      width: 100%;
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .masonry-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(13,22,13,0.85) 0%, transparent 55%);
+      opacity: 0;
+      transition: opacity 0.35s;
+      display: flex; flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.4rem;
+    }
+    .masonry-item:hover .masonry-overlay { opacity: 1; }
+
+    .overlay-caption {
+      font-size: 0.95rem; font-weight: 400;
+      color: var(--snow); line-height: 1.4;
+      margin-bottom: 0.3rem;
+    }
+    .overlay-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.56rem; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--gold);
+    }
+
+    .expand-icon {
+      position: absolute; top: 1rem; right: 1rem;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: rgba(13,22,13,0.6);
+      border: 1px solid rgba(163,184,153,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem; color: var(--sage);
+      opacity: 0; transition: opacity 0.3s;
+      backdrop-filter: blur(8px);
+    }
+    .masonry-item:hover .expand-icon { opacity: 1; }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 2000;
+      background: rgba(10,17,10,0.95);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.35s;
+      backdrop-filter: blur(12px);
+    }
+    .lightbox.open { opacity: 1; pointer-events: all; }
+
+    .lightbox-inner {
+      position: relative;
+      max-width: 90vw; max-height: 90vh;
+      display: flex; flex-direction: column; align-items: center;
+      gap: 1rem;
+    }
+
+    .lightbox-img-wrap {
+      position: relative; max-height: 78vh;
+      border-radius: 3px; overflow: hidden;
+      border: 1px solid rgba(107,143,94,0.25);
+      box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+    }
+
+    .lightbox-photo {
+      display: block; max-width: 88vw; max-height: 78vh;
+      object-fit: contain;
+    }
+
+    .lb-meta {
+      text-align: center;
+    }
+    .lb-caption {
+      font-size: 1.05rem; font-weight: 400; color: var(--mist);
+      margin-bottom: 0.3rem;
+    }
+    .lb-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--gold);
+    }
+
+    .lb-close {
+      position: absolute; top: 1.5rem; right: 1.5rem; z-index: 2010;
+      width: 42px; height: 42px; border-radius: 50%;
+      background: rgba(26,46,26,0.8);
+      border: 1px solid rgba(163,184,153,0.3);
+      color: var(--mist); font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all 0.25s;
+      backdrop-filter: blur(8px);
+    }
+    .lb-close:hover { background: rgba(232,184,75,0.15); border-color: var(--gold); color: var(--gold); }
+
+    .lb-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 46px; height: 46px; border-radius: 50%;
+      background: rgba(26,46,26,0.7);
+      border: 1px solid rgba(163,184,153,0.3);
+      color: var(--mist); font-size: 1.1rem;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all 0.25s;
+      backdrop-filter: blur(8px);
+    }
+    .lb-nav:hover { background: rgba(232,184,75,0.15); border-color: var(--gold); color: var(--gold); }
+    .lb-prev { left: -70px; }
+    .lb-next { right: -70px; }
+
+    .lb-counter {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem; letter-spacing: 0.2em;
+      color: rgba(163,184,153,0.4);
+    }
+
+    /* ── QUOTE STRIP ── */
+    .quote-strip {
+      background: var(--pine);
+      padding: 4.5rem 3rem;
+      border-top: 1px solid rgba(107,143,94,0.2);
+      border-bottom: 1px solid rgba(107,143,94,0.2);
+      text-align: center;
+    }
+    .quote-strip blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      font-style: italic; font-weight: 700;
+      color: var(--snow);
+      max-width: 720px; margin: 0 auto;
+      line-height: 1.5;
+    }
+    .quote-strip blockquote em { color: var(--gold); }
+    .quote-strip cite {
+      display: block; margin-top: 1.2rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--sage);
+      font-style: normal;
+    }
+
+    /* ── BOOKING BANNER (same as homepage) ── */
+    .dp-booking-banner {
+      background: var(--pine);
+      border-top: 1px solid rgba(232,184,75,0.2);
+      border-bottom: 1px solid rgba(232,184,75,0.2);
+      padding: 4.5rem 3rem;
+      position: relative; overflow: hidden;
+    }
+    .dp-booking-banner::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(232,184,75,0.06) 0%, transparent 70%),
+                  radial-gradient(ellipse 40% 60% at 10% 50%, rgba(107,143,94,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .dp-banner-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr auto;
+      gap: 3rem; align-items: center; position: relative; z-index: 1;
+    }
+    .dp-banner-eyebrow {
+      font-family: "DM Mono", monospace; font-size: 0.6rem;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.8rem;
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    .dp-banner-eyebrow::before { content: ""; width: 18px; height: 1px; background: var(--gold); }
+    .dp-banner-heading {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 700; color: var(--snow); line-height: 1.2; margin-bottom: 1rem;
+    }
+    .dp-banner-heading em { font-style: italic; color: var(--gold); }
+    .dp-banner-desc { font-size: 1.05rem; font-weight: 300; color: var(--mist); line-height: 1.75; max-width: 580px; }
+    .dp-banner-desc strong { color: var(--snow); font-weight: 600; }
+    .dp-banner-right { display: flex; flex-direction: column; align-items: center; gap: 1rem; flex-shrink: 0; }
+    .dp-banner-trust { display: flex; flex-direction: column; gap: 0.45rem; text-align: center; }
+    .dp-trust-item {
+      font-family: "DM Mono", monospace; font-size: 0.6rem;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage);
+      display: flex; align-items: center; gap: 0.4rem; justify-content: center;
+    }
+    .dp-trust-item::before { content: "✓"; color: var(--fern); font-size: 0.65rem; }
+    .dp-book-btn {
+      display: inline-flex; align-items: center; gap: 0.7rem;
+      background: var(--gold); color: var(--charcoal); text-decoration: none;
+      padding: 1rem 2rem; border-radius: 3px;
+      font-family: "DM Mono", monospace; font-size: 0.75rem;
+      font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase;
+      transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+      box-shadow: 0 6px 28px rgba(232,184,75,0.3); white-space: nowrap;
+    }
+    .dp-book-btn:hover { background: var(--amber); transform: translateY(-2px); box-shadow: 0 10px 36px rgba(232,184,75,0.4); }
+    .dp-book-btn svg { width: 14px; height: 14px; flex-shrink: 0; stroke: var(--charcoal); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .dp-logo-link { font-family: "DM Mono", monospace; font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(163,184,153,0.5); text-decoration: none; transition: color 0.25s; }
+    .dp-logo-link:hover { color: var(--sage); }
+
+   /* ── FOOTER ── */
+footer { background: var(--charcoal); border-top: 1px solid rgba(107,143,94,0.15); padding: 3.5rem 3rem 2rem; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(163,184,153,0.1); }
+.footer-brand-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 900; color: var(--gold); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.5rem; }
+.footer-brand-sub { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage); margin-bottom: 1rem; }
+.footer-brand p { font-size: 0.9rem; color: rgba(163,184,153,0.55); line-height: 1.7; max-width: 240px; font-weight: 300; }
+.footer-col h4 { font-family: 'DM Mono', monospace; font-size: 0.6rem; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+.footer-col a { text-decoration: none; color: rgba(163,184,153,0.55); font-size: 0.9rem; transition: color var(--transition); font-weight: 300; }
+.footer-col a:hover { color: var(--mist); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; flex-wrap: wrap; gap: 0.7rem; }
+.footer-bottom p { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: rgba(163,184,153,0.3); letter-spacing: 0.1em; }
+.footer-tagline { font-style: italic; }
+
+
+    /* REVEAL */
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.75s ease, transform 0.75s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      nav { padding: 0 1.5rem; }
+      .nav-links { display: none; }
+      .filter-bar { padding: 1rem 1.5rem; }
+      .gallery-hero-content { padding: 0 1.5rem 2.5rem; }
+      .gallery-inner { padding: 0 1.5rem; }
+      .quote-strip { padding: 3.5rem 1.5rem; }
+      .dp-booking-banner { padding: 3.5rem 1.5rem; }
+      .dp-banner-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .dp-banner-right { align-items: flex-start; }
+      .footer-inner { flex-direction: column; align-items: flex-start; }
+      .lb-prev { left: -50px; }
+      .lb-next { right: -50px; }
+    }
+    @media (max-width: 600px) {
+      .lb-prev, .lb-next { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#book" class="float-book">⛺ Book the Trek</a>
+
+  <!-- NAV -->
+  <nav>
+    <a href="index.html" class="logo">
+      <span class="logo-main">Kokhe Danda Trek</span>
+      <span class="logo-sub">by Discover Parbat</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="About-The-Trek.html">About</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+  
+  </nav>
+
+  <!-- GALLERY HERO -->
+  <section class="gallery-hero">
+    <div class="gallery-hero-bg"></div>
+    <div class="stars-hero"></div>
+
+    <svg class="hero-ridge-svg" viewBox="0 0 1440 260" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,260 L0,160 L120,110 L200,145 L320,60 L420,110 L500,80 L580,130 L680,40 L780,95 L860,55 L940,105 L1040,30 L1140,90 L1220,55 L1320,115 L1440,70 L1440,260 Z" fill="rgba(163,184,153,0.12)"/>
+      <path d="M0,260 L0,200 L160,160 L280,190 L400,140 L520,175 L640,130 L760,165 L880,125 L1000,160 L1120,130 L1240,155 L1360,135 L1440,150 L1440,260 Z" fill="rgba(44,74,44,0.15)"/>
+    </svg>
+
+    <div class="mist-hero"></div>
+
+    <div class="gallery-hero-content">
+      <div class="hero-eyebrow">Visual Journey</div>
+      <h1>
+        The Ridge<br>
+        <em>Through the Lens</em>
+      </h1>
+      <p class="hero-sub">
+        Rhododendron forests, mist-shrouded ridgelines, village life, and Himalayan panoramas — every frame a reason to walk these trails.
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <div class="filter-groups">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="landscape">Landscapes</button>
+        <button class="filter-btn" data-filter="forest">Forest &amp; Flora</button>
+        <button class="filter-btn" data-filter="village">Village Life</button>
+        <button class="filter-btn" data-filter="summit">Summit Views</button>
+        <button class="filter-btn" data-filter="trail">On the Trail</button>
+      </div>
+      <div class="filter-count"><span id="visibleCount">18</span> photos</div>
+    </div>
+  </div>
+
+  <!-- GALLERY GRID -->
+  <section class="gallery-section">
+    <div class="gallery-inner">
+      <div class="masonry" id="masonryGrid">
+
+        <!-- Each item: data-cat for filtering, data-src for lightbox, data-caption & data-tag for overlay -->
+
+        <div class="masonry-item reveal" data-cat="landscape" data-src="kokhe.jpg" data-caption="Teahouse at Kokhe Danda with Annapurna Range" data-tag="Landscape">
+          <div class="photo-placeholder" style="background: linear-gradient(160deg,#1a2e1a,#2c4a2c,#1e3318); aspect-ratio:4/3;">
+            <img src="kokhe.jpg" alt="The main ridge at golden hour" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Teahouse at Kokhe Danda with Annapurna Range</div>
+            <div class="overlay-tag">Landscape</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="forest" data-src="kokhe1.jpg" data-caption="Teahouse at Kokhe Danda with Dhaulagiri Range" data-tag="Forest &amp; Flora">
+          <div class="photo-placeholder" style="background: linear-gradient(170deg,#2c4a2c,#4a6741,#1a2e1a); aspect-ratio:3/4;">
+            <img src="kokhe1.jpg" alt="Rhododendron bloom in spring" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Teahouse at Kokhe Danda with Dhaulagiri Range</div>
+            <div class="overlay-tag">Mountains &amp; </div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="summit" data-src="kokhe2.jpg" data-caption="View of Dhaulagiri Range from Phalame Danda" data-tag="Summit Views">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#0d1a0d,#1a2e1a,#8b6914 180%); aspect-ratio:16/9;">
+            <img src="kokhe2.jpg" alt="Dhaulagiri from the upper ridge" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">View of Dhaulagiri Range from Phalame Danda</div>
+            <div class="overlay-tag">Mountains</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="trail" data-src="kokhe3.jpg" data-caption="Aerial View from Kokhe Danda" data-tag="On the Trail">
+          <div class="photo-placeholder" style="background: linear-gradient(155deg,#1e3318,#4a6741,#2c4a2c); aspect-ratio:3/4;">
+            <img src="kokhe3.jpg" alt="Morning light on the forest trail" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Aerial View from Kokhe Danda</div>
+            <div class="overlay-tag">Bird Eye View</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="landscape" data-src="kokhe4.jpg" data-caption="Aerial View of Lespar" data-tag="Landscape">
+          <div class="photo-placeholder" style="background: linear-gradient(165deg,#243b24,#1a2e1a,#6b5d4f 200%); aspect-ratio:4/3;">
+            <img src="kokhe4.jpg" alt="Cloud inversion over the valley" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Aerial View of Lespar</div>
+            <div class="overlay-tag">Village</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="village" data-src="kokhe5.jpg" data-caption="Cute lunchspot at Dhima Danda" data-tag="Village Life">
+          <div class="photo-placeholder" style="background: linear-gradient(140deg,#2a2420,#4a6741,#1a2e1a); aspect-ratio:1/1;">
+            <img src="kokhe5.jpg" alt="A local homestay in Parbat" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Cute lunchspot at Dhima Danda</div>
+            <div class="overlay-tag">Trail</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="landscape" data-src="kokhe6.jpg" data-caption="Pink Rhododendron Forest alongside the trail" data-tag="Landscape">
+          <div class="photo-placeholder" style="background: linear-gradient(175deg,#1a2e1a,#8b6914 300%,#0d1a0d); aspect-ratio:16/9;">
+            <img src="kokhe6.jpg" alt="The ridge at dusk" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Pink Rhododendron Forest alongside the trail</div>
+            <div class="overlay-tag">Trail . Forest</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="forest" data-src="kokhe7.jpg" data-caption="Annapurna South framed with Rhododendrons" data-tag="Forest &amp; Flora">
+          <div class="photo-placeholder" style="background: linear-gradient(160deg,#243b24,#1e3318,#2c4a2c); aspect-ratio:3/4;">
+            <img src="kokhe7.jpg" alt="Ancient oak canopy overhead" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Annapurna South framed with Rhododendrons</div>
+            <div class="overlay-tag">Mountain &amp; Flora</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="trail" data-src="kokhe8.jpg" data-caption="Magar Cultural Dance at Lespar" data-tag="On the Trail">
+          <div class="photo-placeholder" style="background: linear-gradient(150deg,#2c4a2c,#6b5d4f 200%,#1a2e1a); aspect-ratio:4/3;">
+            <img src="kokhe8.jpg" alt="Following the stone path upward" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Magar Cultural Dance at Lespar</div>
+            <div class="overlay-tag">Culturel</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="summit" data-src="kokhe9.jpg" data-caption="Magar Cultural Dance at Phalame Danda" data-tag="Summit Views">
+          <div class="photo-placeholder" style="background: linear-gradient(165deg,#0d1a0d,#1a2e1a,#c8901f 280%); aspect-ratio:16/9;">
+            <img src="kokhe9.jpg" alt="Annapurna range at sunrise" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Magar Cultural Dance at Phalame Danda</div>
+            <div class="overlay-tag">Culture</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="village" data-src="kokhe10.jpg" data-caption="Dog enjoying the Mountain View at Haljure" data-tag="Village Life">
+          <div class="photo-placeholder" style="background: linear-gradient(155deg,#4a6741,#2c4a2c,#1e3318); aspect-ratio:4/3;">
+            <img src="kokhe10.jpg" alt="Millet terraces above the valley" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Dog enjoying the Mountain View at Haljure</div>
+            <div class="overlay-tag">landscape</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="forest" data-src="kokhe11.jpg" data-caption="Trekkers descending down from Kokhe Dandav" data-tag="Forest &amp; Flora">
+          <div class="photo-placeholder" style="background: linear-gradient(170deg,#1e3318,#4a6741,#243b24); aspect-ratio:3/4;">
+            <img src="kokhe11.jpg" alt="Ferns beside the pilgrim trail" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Trekkers descending down from Kokhe Danda</div>
+            <div class="overlay-tag">Mountain &amp; Trail</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="landscape" data-src="kokhe12.jpg" data-caption="Lower village of Lespar" data-tag="Landscape">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1a2e1a,#2c4a2c 80%,#0d1a0d); aspect-ratio:16/10;">
+            <img src="kokhe12.jpg" alt="Monsoon mists rolling in" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Lower village of Lespar</div>
+            <div class="overlay-tag">Village</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="trail" data-src="kokhe13.jpg" data-caption="Golden Clouds Over Annapurnas" data-tag="On the Trail">
+          <div class="photo-placeholder" style="background: linear-gradient(160deg,#0d1a0d,#1a2e1a,#e8b84b 350%); aspect-ratio:4/3;">
+            <img src="kokhe13.jpg" alt="Prayer flags at the high pass" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Golden Clouds Over Annapurnas</div>
+            <div class="overlay-tag">Mountain</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="village" data-src="kokhe14.jpg" data-caption="Community Homestay at Phalame Danda" data-tag="Village Life">
+          <div class="photo-placeholder" style="background: linear-gradient(155deg,#2c4a2c,#4a6741,#8b6914 280%); aspect-ratio:3/4;">
+            <img src="kokhe14.jpg" alt="Children at the herder's settlement" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Community Homestay at Phalame Danda</div>
+            <div class="overlay-tag">Homestay</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="summit" data-src="kokhe15.jpg" data-caption="A trekker at Kokhe Danda Viewpoin" data-tag="Summit Views">
+          <div class="photo-placeholder" style="background: linear-gradient(165deg,#1a2e1a,#0d1a0d,#6b5d4f 280%); aspect-ratio:21/9;">
+            <img src="kokhe15.jpg" alt="360° panorama from Kokhe peak" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">A trekker at Kokhe Danda Viewpoint</div>
+            <div class="overlay-tag">Mountain View</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="trail" data-src="kokhe16.jpg" data-caption="Trekker looking towards Kokhe Danda and Fishtai" data-tag="On the Trail">
+          <div class="photo-placeholder" style="background: linear-gradient(150deg,#243b24,#1a2e1a,#2c4a2c); aspect-ratio:4/3;">
+            <img src="kokhe16.jpg" alt="Trekkers crossing the open meadow" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Trekker looking towards Kokhe Danda and Fishtail</div>
+            <div class="overlay-tag">On the Trail</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="forest" data-src="kokhe17.jpg" data-caption="Looking towards Dhaulagiri" data-tag="Forest &amp; Flora">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1e3318,#4a6741,#243b24); aspect-ratio:4/3;">
+            <img src="kokhe17.jpg" alt="Mossy stones in the old forest" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Looking towards Dhaulagiri</div>
+            <div class="overlay-tag">Mountain &amp; Trail</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+          <div class="masonry-item reveal" data-cat="forest" data-src="kokhe18.jpg" data-caption="Aerial View of Kokhe Danda" data-tag="Forest &amp; Flora">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1e3318,#4a6741,#243b24); aspect-ratio:4/3;">
+            <img src="kokhe18.jpg" alt="Mossy stones in the old forest" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Aerial View of Kokhe Danda</div>
+            <div class="overlay-tag">Drone View &amp; Snow</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+          <div class="masonry-item reveal" data-cat="forest" data-src="kokhe19.jpg" data-caption="Startrail over Annapurna from Haljure" data-tag="Forest &amp; Flora">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1e3318,#4a6741,#243b24); aspect-ratio:4/3;">
+            <img src="kokhe19.jpg" alt="Mossy stones in the old forest" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Startrail over Annapurna from Haljure</div>
+            <div class="overlay-tag">Nightsky &amp; Startrail</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+
+
+          <div class="masonry-item reveal" data-cat="forest" data-src="kokhe20.jpg" data-caption="Iconic Viewpoint near Dhima Danda" data-tag="Forest &amp; Flora">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1e3318,#4a6741,#243b24); aspect-ratio:4/3;">
+            <img src="kokhe20.jpg" alt="Mossy stones in the old forest" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Iconic Viewpoint near Dhima Danda</div>
+            <div class="overlay-tag">Trail &amp; Peaks</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+          <div class="masonry-item reveal" data-cat="forest" data-src="kokhe21.jpg" data-caption="Iconic Viewpoint near Dhima Danda" data-tag="Forest &amp; Flora">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1e3318,#4a6741,#243b24); aspect-ratio:4/3;">
+            <img src="kokhe21.jpg" alt="Mossy stones in the old forest" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Iconic Viewpoint near Dhima Danda</div>
+            <div class="overlay-tag">Forest &amp; Trail</div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="forest" data-src="kokhe7.jpg" data-caption="View of Gurja Himal from Kokhe Danda" data-tag="Forest &amp; Flora">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1e3318,#4a6741,#243b24); aspect-ratio:4/3;">
+            <img src="kokhe22.jpg" alt="Mossy stones in the old forest" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">View of Gurja Himal from Kokhe Danda</div>
+            <div class="overlay-tag">Summit View &amp; </div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="forest" data-src="kokhe28.jpg" data-caption="Shatabdi Ghar, a three century old Home turned into a museum." data-tag="Architecture &amp; ">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1e3318,#4a6741,#243b24); aspect-ratio:4/3;">
+            <img src="kokhe28.jpg" alt="Mossy stones in the old forest" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Shatabdi Ghar, a three century old Home turned into a museum.</div>
+            <div class="overlay-tag">Local Architecture &amp; </div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        <div class="masonry-item reveal" data-cat="forest" data-src="kokhe29.jpg" data-caption="The Village of Lespar" data-tag="Village &amp; Architecture">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1e3318,#4a6741,#243b24); aspect-ratio:4/3;">
+            <img src="kokhe29.jpg" alt="Mossy stones in the old forest" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">The Village of Lespar</div>
+            <div class="overlay-tag">Village&amp; </div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+        
+        <div class="masonry-item reveal" data-cat="forest" data-src="kokhe26.jpg" data-caption="Looking towards Jaljala Valley from Dhima Danda" data-tag="Landscape">
+          <div class="photo-placeholder" style="background: linear-gradient(145deg,#1e3318,#4a6741,#243b24); aspect-ratio:4/3;">
+            <img src="kokhe26.jpg" alt="Mossy stones in the old forest" style="width:100%;height:auto;display:block;" onerror="this.style.display='none'">
+          </div>
+          <div class="masonry-overlay">
+            <div class="overlay-caption">Looking towards Jaljala Valley from Dhima Danda</div>
+            <div class="overlay-tag">Landscape &amp; </div>
+          </div>
+          <div class="expand-icon">⤢</div>
+        </div>
+
+
+
+
+
+      </div><!-- /masonry -->
+    </div>
+  </section>
+
+  <!-- QUOTE STRIP -->
+  <div class="divider"></div>
+  <section class="quote-strip">
+    <blockquote>
+      "Every photograph here is a door. <em>Walk through any one of them</em> and you'll understand why we built this trail."
+    </blockquote>
+    <cite>— Discover Parbat, founders of the Kokhe Danda Trek</cite>
+  </section>
+  <div class="divider"></div>
+
+  <!-- BOOKING BANNER -->
+  <section class="dp-booking-banner" id="book">
+    <div class="dp-banner-inner">
+      <div class="dp-banner-left">
+        <div class="dp-banner-eyebrow">Ready to Walk the Ridge?</div>
+        <h2 class="dp-banner-heading">Book this Trek with<br><em>Discover Parbat</em></h2>
+        <p class="dp-banner-desc">This trail was designed, scouted, and pioneered by <strong>Discover Parbat</strong> — a local trekking company born in Parbat, Nepal. When you book with them, you're going directly to the founders of this route: people who know every turn, every homestay family, and every ridgeline view by name.</p>
+      </div>
+      <div class="dp-banner-right">
+        <div class="dp-banner-trust">
+          <span class="dp-trust-item">Founders of the Kokhe Danda Trail</span>
+          <span class="dp-trust-item">Local guides, born in Parbat</span>
+          <span class="dp-trust-item">All homestays arranged directly</span>
+          <span class="dp-trust-item">Responsible &amp; community-led tourism</span>
+        </div>
+        <a href="https://www.discoverparbat.com" target="_blank" rel="noopener" class="dp-book-btn">
+          <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Visit Discover Parbat
+        </a>
+        <a href="https://www.discoverparbat.com" target="_blank" rel="noopener" class="dp-logo-link">discoverparbat.com</a>
+      </div>
+    </div>
+  </section>
+
+   <!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">Kokhe Danda Trek</div>
+      <div class="footer-brand-sub">by Discover Parbat · Parbat, Nepal</div>
+      <p>Connecting travelers with authentic Himalayan experiences in Parbat, Nepal. Locally guided, responsibly run.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="About-The-Trek.html">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Treks</h4>
+      <ul>
+        <li><a href="Short-kokhe-Danda-Trek.html">Short Trek (3 Days)</a></li>
+        <li><a href="Kokhe-Danda-Trek.html">Classic Trek (5 Days)</a></li>
+        <li><a href="Multiple-Viewpoints-Trek.html">Extended Trek (6 Days)</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/discoverparbat" target="_blank">Facebook</a></li>
+        <li><a href="https://maps.app.goo.gl/wJ8wzmghg8FJQt8T8" target="_blank">Google</a></li>
+        <li><a href="mailto:discoverparbat@gmail.com">Email Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Kokhe Danda Trek · Discover Parbat. All rights reserved.</p>
+    <p class="footer-tagline">Walk slow, go far.</p>
+  </div>
+</footer>
+
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+    <div class="lightbox-inner">
+      <div class="lightbox-img-wrap">
+        <img class="lightbox-photo" id="lbImg" src="" alt="">
+      </div>
+      <div class="lb-meta">
+        <div class="lb-caption" id="lbCaption"></div>
+        <div class="lb-tag" id="lbTag"></div>
+      </div>
+      <div class="lb-counter" id="lbCounter"></div>
+    </div>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8592;</button>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8594;</button>
+  </div>
+
+  <script>
+    // ── Scroll Reveal ────────────────────────────
+    const revealEls = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), 60 * (Array.from(revealEls).indexOf(e.target) % 6));
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    revealEls.forEach(el => obs.observe(el));
+
+    // ── Filter ───────────────────────────────────
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.masonry-item');
+    const countEl = document.getElementById('visibleCount');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.filter;
+        let visible = 0;
+        items.forEach(item => {
+          const match = cat === 'all' || item.dataset.cat === cat;
+          item.style.display = match ? '' : 'none';
+          if (match) visible++;
+        });
+        countEl.textContent = visible;
+      });
+    });
+
+    // ── Lightbox ─────────────────────────────────
+    const lightbox = document.getElementById('lightbox');
+    const lbImg    = document.getElementById('lbImg');
+    const lbCaption = document.getElementById('lbCaption');
+    const lbTag    = document.getElementById('lbTag');
+    const lbCounter = document.getElementById('lbCounter');
+    let currentIndex = 0;
+    let visibleItems = [];
+
+    function getVisibleItems() {
+      return Array.from(items).filter(i => i.style.display !== 'none');
+    }
+
+    function openLightbox(index) {
+      visibleItems = getVisibleItems();
+      currentIndex = index;
+      updateLightbox();
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function updateLightbox() {
+      const item = visibleItems[currentIndex];
+      lbImg.src = item.dataset.src;
+      lbImg.alt = item.dataset.caption;
+      lbCaption.textContent = item.dataset.caption;
+      lbTag.innerHTML = item.dataset.tag;
+      lbCounter.textContent = `${currentIndex + 1} / ${visibleItems.length}`;
+    }
+
+    items.forEach((item, idx) => {
+      item.addEventListener('click', () => {
+        visibleItems = getVisibleItems();
+        const visIdx = visibleItems.indexOf(item);
+        if (visIdx !== -1) openLightbox(visIdx);
+      });
+    });
+
+    document.getElementById('lbClose').addEventListener('click', closeLightbox);
+    document.getElementById('lbPrev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+      updateLightbox();
+    });
+    document.getElementById('lbNext').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % visibleItems.length;
+      updateLightbox();
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length; updateLightbox(); }
+      if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % visibleItems.length; updateLightbox(); }
+    });
+
+    // Nav background on scroll
+    window.addEventListener('scroll', () => {
+      document.querySelector('nav').style.background =
+        window.scrollY > 20 ? 'rgba(13,22,13,0.97)' : 'rgba(13,22,13,0.97)';
+    });
+  </script>
+
+</body>
+</html>

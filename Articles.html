@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Kokhe Danda Trek – Discover Parbat" />
+<meta property="og:description" content="Articles – Kokhe Danda Trek | Trail Stories, Tips & Parbat Guides" />
+<meta property="og:image" content="https://yourwebsite.com/kokhe.jpg" />
+
+<title>Articles – Kokhe Danda Trek | Trail Stories, Tips & Parbat Guides</title>
+<meta name="description" content="Stories, guides and honest advice from the trail. Everything you need to know about Kokhe Danda Trek, Parbat trekking, and the hills of western Nepal.">
+<meta name="keywords" content="Kokhe Danda Trek articles, Parbat trekking guide, Nepal trek tips, offbeat Nepal trekking, Discover Parbat blog">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --forest:    #1a2e1a;
+  --pine:      #2c4a2c;
+  --moss:      #4a6741;
+  --fern:      #6b8f5e;
+  --sage:      #a3b899;
+  --mist:      #dce8d5;
+  --amber:     #c8901f;
+  --gold:      #e8b84b;
+  --snow:      #f8f5ef;
+  --charcoal:  #2a2420;
+  --card-bg:   rgba(20,36,20,0.82);
+  --card-border: rgba(107,143,94,0.2);
+  --radius:    10px;
+  --transition: 0.32s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  background: var(--forest);
+  color: var(--mist);
+  overflow-x: hidden;
+  line-height: 1.75;
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.3;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top:0; left:0; right:0; z-index:1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 3rem; height: 68px;
+  background: rgba(13,22,13,0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(163,184,153,0.12);
+  transition: box-shadow var(--transition);
+}
+nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.4); }
+.logo { text-decoration: none; line-height: 1; }
+.logo-main { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold); display: block; }
+.logo-sub { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage); }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: var(--mist); transition: color var(--transition); position: relative; }
+.nav-links a::after { content: ''; position: absolute; bottom: -3px; left:0; right:0; height: 1px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); }
+.nav-links a.active { color: var(--gold); }
+.nav-book { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--charcoal); background: var(--gold); padding: 0.45rem 1.1rem; border-radius: 2px; transition: background var(--transition); }
+.nav-book:hover { background: var(--amber); }
+
+/* ── HERO BANNER with photo ── */
+.page-hero {
+  margin-top: 68px;
+  position: relative;
+  height: 72vh;
+  min-height: 480px;
+  max-height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+/* The hero background image */
+.page-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  filter: brightness(0.65) saturate(0.85);
+  transform: scale(1.04);
+  animation: heroZoom 18s ease-in-out infinite alternate;
+}
+@keyframes heroZoom {
+  from { transform: scale(1.04); }
+  to   { transform: scale(1.10); }
+}
+
+/* Gradient overlay — dark at bottom for text legibility */
+.page-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(13,22,13,0.96) 0%, rgba(13,22,13,0.5) 45%, rgba(13,22,13,0.15) 100%),
+    linear-gradient(to right, rgba(13,22,13,0.4) 0%, transparent 60%);
+  z-index: 1;
+}
+
+/* Mist drift */
+.hero-mist {
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 280px;
+  background: linear-gradient(to top, rgba(26,46,26,0.35) 0%, transparent 100%);
+  z-index: 2;
+  animation: driftMist 14s ease-in-out infinite alternate;
+}
+@keyframes driftMist {
+  from { transform: translateX(-12px); }
+  to   { transform: translateX(12px); }
+}
+
+/* Vertical label */
+.hero-vertical-label {
+  position: absolute; left: 2.5rem; top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.52rem; letter-spacing: 0.38em; text-transform: uppercase;
+  color: rgba(163,184,153,0.25);
+  white-space: nowrap;
+  z-index: 3;
+}
+
+/* Hero text content */
+.page-hero-content {
+  position: relative;
+  z-index: 3;
+  padding: 0 3rem 3.5rem 6rem;
+  max-width: 900px;
+  animation: fadeUp 1s ease both;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 0.9rem;
+  display: flex; align-items: center; gap: 0.7rem;
+}
+.hero-eyebrow::before { content: ''; width: 20px; height: 1px; background: var(--gold); }
+
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  font-weight: 900; line-height: 1.0;
+  color: var(--snow); margin-bottom: 1rem;
+  letter-spacing: -0.015em;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+}
+.page-hero h1 em { font-style: italic; color: var(--gold); }
+
+.hero-desc {
+  font-size: 1.12rem; font-weight: 300; color: rgba(220,232,213,0.85);
+  max-width: 520px; line-height: 1.7;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+}
+
+/* Photo credit */
+.hero-photo-credit {
+  position: absolute; right: 1.5rem; bottom: 1rem; z-index: 3;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.48rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(163,184,153,0.2);
+}
+
+/* ── FILTER TABS ── */
+.filter-bar {
+  background: rgba(13,22,13,0.97);
+  border-bottom: 1px solid var(--card-border);
+  padding: 0 3rem;
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 68px;
+  z-index: 100;
+}
+.filter-bar-inner {
+  max-width: 1120px; margin: 0 auto;
+  display: flex; gap: 0; overflow-x: auto;
+}
+.filter-btn {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--sage); background: none; border: none;
+  padding: 1.1rem 1.4rem; cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+  white-space: nowrap;
+}
+.filter-btn:hover { color: var(--mist); }
+.filter-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+/* ── ARTICLES GRID ── */
+.articles-section {
+  max-width: 1120px; margin: 0 auto;
+  padding: 3.5rem 3rem 5rem;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* ── ARTICLE CARD ── */
+.article-card {
+  display: flex; flex-direction: column;
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius); overflow: hidden;
+  text-decoration: none; color: inherit;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  position: relative;
+}
+.article-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(232,184,75,0.3);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.45);
+}
+.article-card::before {
+  content: '';
+  position: absolute; top:0; left:0; right:0; height:2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity: 0; transition: opacity var(--transition);
+  z-index: 2;
+}
+.article-card:hover::before { opacity: 1; }
+
+/* Featured: first card spans full width */
+.article-card.featured {
+  grid-column: 1 / -1;
+  flex-direction: row;
+}
+.article-card.featured .article-thumb {
+  width: 48%; flex-shrink: 0; height: auto; min-height: 300px;
+}
+.article-card.featured .article-body { padding: 2.5rem 2.8rem; justify-content: center; }
+.article-card.featured .article-title { font-size: 1.85rem; line-height: 1.15; }
+.article-card.featured .article-excerpt { font-size: 1.02rem; -webkit-line-clamp: 4; }
+
+/* ── THUMBNAIL ── */
+.article-thumb {
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--pine);
+}
+
+/* Real thumbnail images via Unsplash */
+.article-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.7s ease, filter 0.4s ease;
+  filter: brightness(0.78) saturate(0.9);
+}
+.article-card:hover .article-thumb img {
+  transform: scale(1.06);
+  filter: brightness(0.65) saturate(0.85);
+}
+
+.thumb-overlay {
+  position: absolute; inset:0;
+  background: linear-gradient(to top, rgba(13,22,13,0.78) 0%, rgba(13,22,13,0.15) 55%, transparent 100%);
+  z-index: 1;
+}
+
+.thumb-category {
+  position: absolute; top: 1rem; left: 1rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.56rem; letter-spacing: 0.16em; text-transform: uppercase;
+  background: rgba(13,22,13,0.8); backdrop-filter: blur(8px);
+  border: 1px solid rgba(163,184,153,0.2);
+  color: var(--sage); padding: 0.28rem 0.65rem; border-radius: 100px;
+  z-index: 2;
+}
+
+.thumb-read-time {
+  position: absolute; bottom: 0.85rem; right: 0.85rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.52rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(220,232,213,0.55);
+  z-index: 2;
+}
+
+/* ── ARTICLE BODY ── */
+.article-body {
+  padding: 1.5rem 1.6rem 1.8rem;
+  display: flex; flex-direction: column; flex: 1;
+}
+.article-meta {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.56rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 0.7rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.article-meta-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--fern); }
+
+.article-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.22rem; font-weight: 700; color: var(--snow);
+  line-height: 1.2; margin-bottom: 0.75rem;
+  transition: color var(--transition);
+}
+.article-card:hover .article-title { color: var(--gold); }
+
+.article-excerpt {
+  font-size: 0.94rem; font-weight: 300; color: rgba(220,232,213,0.65);
+  line-height: 1.7; flex: 1; margin-bottom: 1.3rem;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.article-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gold); display: flex; align-items: center; gap: 0.45rem;
+  transition: gap var(--transition);
+  margin-top: auto;
+}
+.article-link::after { content: '→'; }
+.article-card:hover .article-link { gap: 0.8rem; }
+
+/* ── DP BANNER ── */
+.dp-booking-banner {
+  background: var(--pine);
+  border-top: 1px solid rgba(232,184,75,0.2);
+  border-bottom: 1px solid rgba(232,184,75,0.2);
+  padding: 4rem 3rem;
+  position: relative; overflow: hidden;
+}
+.dp-booking-banner::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(232,184,75,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.dp-banner-inner {
+  max-width: 1120px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 2rem; position: relative; z-index: 1; flex-wrap: wrap;
+}
+.dp-banner-text h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--snow); margin-bottom: 0.5rem; }
+.dp-banner-text h2 em { font-style: italic; color: var(--gold); }
+.dp-banner-text p { font-size: 0.95rem; font-weight: 300; color: var(--mist); max-width: 480px; }
+.dp-book-btn {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  background: var(--gold); color: var(--charcoal);
+  text-decoration: none; padding: 0.9rem 1.8rem; border-radius: 3px;
+  font-family: 'DM Mono', monospace; font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  transition: background var(--transition), transform var(--transition);
+  box-shadow: 0 6px 24px rgba(232,184,75,0.3); white-space: nowrap;
+}
+.dp-book-btn:hover { background: var(--amber); transform: translateY(-2px); }
+.dp-book-btn svg { width: 13px; height: 13px; stroke: var(--charcoal); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ── FOOTER ── */
+footer { background: var(--charcoal); border-top: 1px solid rgba(107,143,94,0.15); padding: 3.5rem 3rem 2rem; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(163,184,153,0.1); }
+.footer-brand-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 900; color: var(--gold); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.5rem; }
+.footer-brand-sub { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage); margin-bottom: 1rem; }
+.footer-brand p { font-size: 0.9rem; color: rgba(163,184,153,0.55); line-height: 1.7; max-width: 240px; font-weight: 300; }
+.footer-col h4 { font-family: 'DM Mono', monospace; font-size: 0.6rem; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+.footer-col a { text-decoration: none; color: rgba(163,184,153,0.55); font-size: 0.9rem; transition: color var(--transition); font-weight: 300; }
+.footer-col a:hover { color: var(--mist); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; flex-wrap: wrap; gap: 0.7rem; }
+.footer-bottom p { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: rgba(163,184,153,0.3); letter-spacing: 0.1em; }
+.footer-tagline { font-style: italic; }
+
+/* ── REVEAL ── */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.08s; }
+.reveal-d2 { transition-delay: 0.16s; }
+.reveal-d3 { transition-delay: 0.24s; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .articles-grid { grid-template-columns: repeat(2, 1fr); }
+  .article-card.featured { flex-direction: column; grid-column: auto; }
+  .article-card.featured .article-thumb { width: 100%; min-height: 240px; }
+  .article-card.featured .article-title { font-size: 1.45rem; }
+  .article-card.featured .article-body { padding: 1.8rem; }
+}
+@media (max-width: 768px) {
+  nav { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .page-hero-content { padding: 0 1.5rem 3rem 1.5rem; }
+  .hero-vertical-label { display: none; }
+  .filter-bar { padding: 0 1.5rem; }
+  .articles-section { padding: 2.5rem 1.5rem 4rem; }
+  .articles-grid { grid-template-columns: 1fr; }
+  .dp-booking-banner { padding: 3rem 1.5rem; }
+  footer { padding: 3rem 1.5rem 1.5rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .footer-brand { grid-column: 1/-1; }
+}
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav id="main-nav">
+  <a href="index.html" class="logo">
+    <span class="logo-main">Kokhe Danda Trek</span>
+    <span class="logo-sub">by Discover Parbat</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="About-The-Trek.html">About</a></li>
+    <li><a href="articles.html" class="active">Articles</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO with photo ── -->
+<section class="page-hero">
+
+  <!-- Replace this src with your own Kokhe Danda / Parbat hero photo -->
+  <img
+    class="page-hero-img"
+    src="kokhe21.jpg"
+    alt="Himalayan ridge at sunrise — Kokhe Danda, Parbat, Nepal"
+    loading="eager"
+  />
+
+  <div class="hero-mist"></div>
+  <div class="hero-vertical-label">Kokhe Danda Trek · Trail Articles · 2025</div>
+
+  <div class="page-hero-content">
+    <div class="hero-eyebrow">From the Trail</div>
+    <h1>Stories &amp; <em>Guides</em></h1>
+    <p class="hero-desc">Honest advice, trail notes, and local knowledge from the hills of Parbat — everything you need before you walk.</p>
+  </div>
+
+  <div class="hero-photo-credit">Photo: Unsplash / Himalayan Ridgeline</div>
+</section>
+
+<!-- ── FILTER TABS ── -->
+<div class="filter-bar">
+  <div class="filter-bar-inner">
+    <button class="filter-btn active" onclick="filterArticles('all', this)">All Articles</button>
+    <button class="filter-btn" onclick="filterArticles('guide', this)">Trek Guides</button>
+    <button class="filter-btn" onclick="filterArticles('culture', this)">Culture</button>
+    <button class="filter-btn" onclick="filterArticles('planning', this)">Planning</button>
+    <button class="filter-btn" onclick="filterArticles('nature', this)">Nature</button>
+  </div>
+</div>
+
+<!-- ── ARTICLES ── -->
+<div class="articles-section">
+  <div class="articles-grid" id="articles-grid">
+
+    <!-- FEATURED: Kokhe Danda vs Poon Hill -->
+    <a href="article-kokhe-danda-vs-poon-hill.html" class="article-card featured reveal" data-category="guide">
+      <div class="article-thumb">
+        <!-- Poon Hill / Himalaya panorama -->
+        <img
+          src="kokhe15.jpg"
+          alt="Himalayan sunrise panorama from a ridge"
+          loading="lazy"
+        />
+        <div class="thumb-overlay"></div>
+        <span class="thumb-category">Trek Guide</span>
+        <span class="thumb-read-time">8 min read</span>
+      </div>
+      <div class="article-body">
+        <div class="article-meta">
+          <span>April 2025</span>
+          <span class="article-meta-dot"></span>
+          <span>Discover Parbat</span>
+        </div>
+        <h2 class="article-title">Kokhe Danda vs Poon Hill: Why the Quiet Ridge Wins</h2>
+        <p class="article-excerpt">Poon Hill gets the crowds. Kokhe Danda gets the silence, the same mountain views, and the kind of village life that Poon Hill lost a decade ago. An honest, side-by-side comparison for trekkers deciding between the two — and why the answer isn't always obvious.</p>
+        <span class="article-link">Read Article</span>
+      </div>
+    </a>
+
+    <!-- FEATURED: Why Guided Trek -->
+    <a href="article-why-guided-trek-kokhe-danda.html" class="article-card featured reveal" data-category="guide">
+      <div class="article-thumb">
+        <!-- Guide leading trekkers on a mountain trail -->
+        <img
+          src="kokhe8.jpg"
+          alt="Local guide leading a trek through Himalayan forest"
+          loading="lazy"
+        />
+        <div class="thumb-overlay"></div>
+        <span class="thumb-category">Trek Guide</span>
+        <span class="thumb-read-time">6 min read</span>
+      </div>
+      <div class="article-body">
+        <div class="article-meta">
+          <span>April 2025</span>
+          <span class="article-meta-dot"></span>
+          <span>Discover Parbat</span>
+        </div>
+        <h2 class="article-title">Why We Strongly Recommend a Guided Trek to Kokhe Danda with Discover Parbat</h2>
+        <p class="article-excerpt">Hiring a guide here isn't mandatory — and we'll be the first to say so. But just because you can trek solo doesn't mean you should. Here's an honest case for why going guided makes the experience richer, safer, and far more meaningful.</p>
+        <span class="article-link">Read Article</span>
+      </div>
+    </a>
+
+    <!-- Article: Best Season -->
+    <a href="article-best-season-kokhe-danda.html" class="article-card reveal reveal-d1" data-category="planning">
+      <div class="article-thumb">
+        <!-- Rhododendron bloom in Himalayan spring -->
+        <img
+          src="kokhe20.jpg"
+          alt="Rhododendron forest in Himalayan spring"
+          loading="lazy"
+        />
+        <div class="thumb-overlay"></div>
+        <span class="thumb-category">Planning</span>
+        <span class="thumb-read-time">5 min read</span>
+      </div>
+      <div class="article-body">
+        <div class="article-meta">
+          <span>March 2025</span>
+          <span class="article-meta-dot"></span>
+          <span>Discover Parbat</span>
+        </div>
+        <h2 class="article-title">The Best Time to Trek Kokhe Danda — Month by Month</h2>
+        <p class="article-excerpt">Spring brings rhododendrons. Autumn brings sharp mountain clarity. December surprises almost everyone. A month-by-month breakdown of what to expect on the trail throughout the year.</p>
+        <span class="article-link">Read Article</span>
+      </div>
+    </a>
+
+    <!-- Article: Magar Culture -->
+    <a href="article-magar-culture-lespar.html" class="article-card reveal reveal-d2" data-category="culture">
+      <div class="article-thumb">
+        <!-- Nepali village life / traditional community -->
+        <img
+          src="kokhe12.jpg"
+          alt="Traditional Magar village life in Parbat, Nepal"
+          loading="lazy"
+        />
+        <div class="thumb-overlay"></div>
+        <span class="thumb-category">Culture</span>
+        <span class="thumb-read-time">6 min read</span>
+      </div>
+      <div class="article-body">
+        <div class="article-meta">
+          <span>February 2025</span>
+          <span class="article-meta-dot"></span>
+          <span>Discover Parbat</span>
+        </div>
+        <h2 class="article-title">The Magar Villages of Lespar: A Culture Worth Slowing Down For</h2>
+        <p class="article-excerpt">Lespar isn't just a stop on the route — it's the reason for it. Inside one of Parbat's quietest Magar communities, a momo-making session and a conversation around a fire reveal what mass-tourism Nepal has been slowly burying.</p>
+        <span class="article-link">Read Article</span>
+      </div>
+    </a>
+
+    <!-- Article: Packing List -->
+    <a href="article-packing-list-kokhe-danda.html" class="article-card reveal reveal-d3" data-category="planning">
+      <div class="article-thumb">
+        <!-- Trekking gear / backpack on a mountain trail -->
+        <img
+          src="kokhe17.jpg"
+          alt="Trekking backpack on a Himalayan trail"
+          loading="lazy"
+        />
+        <div class="thumb-overlay"></div>
+        <span class="thumb-category">Planning</span>
+        <span class="thumb-read-time">7 min read</span>
+      </div>
+      <div class="article-body">
+        <div class="article-meta">
+          <span>January 2025</span>
+          <span class="article-meta-dot"></span>
+          <span>Discover Parbat</span>
+        </div>
+        <h2 class="article-title">What to Pack for Kokhe Danda Trek: A Complete Guide</h2>
+        <p class="article-excerpt">No sponsored gear roundups, no everything-but-the-kitchen-sink lists. A practical, tested packing guide for the Kokhe Danda trail, written by the people who walk it every season — with seasonal tips for each time of year.</p>
+        <span class="article-link">Read Article</span>
+      </div>
+    </a>
+
+  </div><!-- /articles-grid -->
+</div>
+
+<!-- ── DP BANNER ── -->
+<section class="dp-booking-banner">
+  <div class="dp-banner-inner">
+    <div class="dp-banner-text">
+      <h2>Ready to Walk the <em>Ridge?</em></h2>
+      <p>This trail was built by Discover Parbat — a local trekking company from Parbat, Nepal. Book directly with the founders.</p>
+    </div>
+    <a href="https://www.discoverparbat.com" target="_blank" rel="noopener" class="dp-book-btn">
+      <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      Visit Discover Parbat
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">Kokhe Danda Trek</div>
+      <div class="footer-brand-sub">by Discover Parbat · Parbat, Nepal</div>
+      <p>Connecting travelers with authentic Himalayan experiences in Parbat, Nepal. Locally guided, responsibly run.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="About-The-Trek.html">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Treks</h4>
+      <ul>
+        <li><a href="Short-kokhe-Danda-Trek.html">Short Trek (3 Days)</a></li>
+        <li><a href="Kokhe-Danda-Trek.html">Classic Trek (5 Days)</a></li>
+        <li><a href="Multiple-Viewpoints-Trek.html">Extended Trek (6 Days)</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/discoverparbat" target="_blank">Facebook</a></li>
+        <li><a href="https://maps.app.goo.gl/wJ8wzmghg8FJQt8T8" target="_blank">Google</a></li>
+        <li><a href="mailto:discoverparbat@gmail.com">Email Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Kokhe Danda Trek · Discover Parbat. All rights reserved.</p>
+    <p class="footer-tagline">Walk slow, go far.</p>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll shadow
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => obs.observe(el));
+
+  // Filter tabs
+  function filterArticles(cat, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.article-card').forEach(card => {
+      const show = cat === 'all' || card.dataset.category === cat;
+      card.style.display = show ? '' : 'none';
+    });
+  }
+</script>
+</body>
+</html>

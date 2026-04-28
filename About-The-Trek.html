@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta property="og:title" content="Kokhe Danda Trek – Discover Parbat" />
+<meta property="og:description" content="Kokhe Danda Trek: A Journey of Vision, Silence & Soul | Discover Parbat" />
+<meta property="og:image" content="https://yourwebsite.com/kokhe.jpg" />
+
+<title>Kokhe Danda Trek: A Journey of Vision, Silence & Soul | Discover Parbat</title>
+<meta name="description" content="The story behind the Kokhe Danda Trek — how a local ridge became one of Nepal's most authentic trekking experiences through vision, community, and quiet perseverance.">
+<meta name="keywords" content="Kokhe Danda Trek, Parbat trekking, Nepal off the beaten path, Discover Parbat, Dhaulagiri views, Annapurna trek, Authentic Trek" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --forest:    #1a2e1a;
+  --pine:      #2c4a2c;
+  --moss:      #4a6741;
+  --fern:      #6b8f5e;
+  --sage:      #a3b899;
+  --mist:      #dce8d5;
+  --amber:     #c8901f;
+  --gold:      #e8b84b;
+  --trail:     #8b6914;
+  --snow:      #f8f5ef;
+  --charcoal:  #2a2420;
+  --card-bg:   rgba(30,46,30,0.65);
+  --card-border: rgba(107,143,94,0.2);
+  --radius:    10px;
+  --transition: 0.32s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Crimson Pro', Georgia, serif;
+  background: var(--forest);
+  color: var(--mist);
+  overflow-x: hidden;
+  line-height: 1.75;
+}
+
+/* Grain */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.3;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top:0; left:0; right:0; z-index:1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 3rem; height: 68px;
+  background: rgba(13,22,13,0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(163,184,153,0.12);
+  transition: box-shadow var(--transition);
+}
+nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.4); }
+.logo { text-decoration: none; line-height: 1; }
+.logo-main { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase; color: var(--gold); display: block; }
+.logo-sub { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sage); }
+.nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+.nav-links a { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; color: var(--mist); transition: color var(--transition); position: relative; }
+.nav-links a::after { content: ''; position: absolute; bottom: -3px; left:0; right:0; height: 1px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { transform: scaleX(1); }
+.nav-book { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; color: var(--charcoal); background: var(--gold); padding: 0.45rem 1.1rem; border-radius: 2px; transition: background var(--transition); }
+.nav-book:hover { background: var(--amber); }
+
+/* ── HERO ── */
+.page-hero {
+  position: relative;
+  min-height: 75vh;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  margin-top: 68px; overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 60% 20%, rgba(44,74,44,0.4) 0%, transparent 65%),
+    linear-gradient(165deg, #060e06 0%, #0f1e0f 25%, #1a2e1a 55%, #243824 80%, #1a2e1a 100%);
+}
+.hero-bg::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(10,18,10,0.98) 0%, rgba(10,18,10,0.55) 45%, rgba(10,18,10,0.1) 80%, transparent 100%);
+}
+
+/* Animated ridge lines */
+.hero-ridges {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  pointer-events: none;
+}
+
+/* Floating particles */
+.particles {
+  position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+}
+.particle {
+  position: absolute;
+  width: 2px; height: 2px; border-radius: 50%;
+  background: rgba(232,184,75,0.4);
+  animation: floatUp linear infinite;
+}
+.particle:nth-child(1)  { left: 12%; animation-duration: 18s; animation-delay: 0s;   width:1px; height:1px; }
+.particle:nth-child(2)  { left: 28%; animation-duration: 22s; animation-delay: 4s;   }
+.particle:nth-child(3)  { left: 45%; animation-duration: 16s; animation-delay: 8s;   width:1px; height:1px; background: rgba(163,184,153,0.35); }
+.particle:nth-child(4)  { left: 62%; animation-duration: 20s; animation-delay: 2s;   }
+.particle:nth-child(5)  { left: 78%; animation-duration: 24s; animation-delay: 6s;   width:1px; height:1px; }
+.particle:nth-child(6)  { left: 90%; animation-duration: 19s; animation-delay: 10s;  background: rgba(163,184,153,0.3); }
+@keyframes floatUp {
+  from { transform: translateY(100vh) scale(0.5); opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 0.6; }
+  to   { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+.hero-content {
+  position: relative; z-index: 2;
+  padding: 0 3rem 5rem;
+  max-width: 780px;
+  animation: fadeUp 1s ease both;
+}
+@keyframes fadeUp { from { opacity:0; transform: translateY(28px); } to { opacity:1; transform: translateY(0); } }
+
+.hero-breadcrumb {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 1.4rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.hero-breadcrumb a { color: var(--sage); text-decoration: none; transition: color var(--transition); }
+.hero-breadcrumb a:hover { color: var(--gold); }
+.hero-breadcrumb span { color: var(--gold); }
+
+.hero-kicker {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.32em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.2rem;
+  display: flex; align-items: center; gap: 0.8rem;
+}
+.hero-kicker::before { content:''; width:28px; height:1px; background: var(--gold); }
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.6rem, 6.5vw, 5.2rem);
+  font-weight: 900; line-height: 0.94;
+  color: var(--snow); margin-bottom: 1.6rem;
+  letter-spacing: -0.01em;
+}
+.hero-title em { font-style: italic; color: var(--gold); display: block; margin-top: 0.1em; }
+
+.hero-sub {
+  font-size: 1.15rem; font-weight: 300; color: var(--mist);
+  line-height: 1.75; max-width: 520px;
+  border-left: 2px solid rgba(232,184,75,0.4);
+  padding-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Image credit strip */
+.hero-image-strip {
+  position: absolute;
+  inset: 0; z-index: 1;
+}
+.hero-image-strip img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.28;
+}
+
+/* ── READING PROGRESS BAR ── */
+.progress-bar {
+  position: fixed; top: 68px; left: 0; right: 0;
+  height: 2px; z-index: 999;
+  background: rgba(107,143,94,0.15);
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--fern), var(--gold));
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+/* ── ARTICLE BODY ── */
+.article-wrap {
+  max-width: 1100px; margin: 0 auto;
+  padding: 0 3rem 6rem;
+  display: grid;
+  grid-template-columns: 680px 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* ── MAIN COLUMN ── */
+.article-main { padding-top: 5rem; }
+
+/* Section intro */
+.chapter {
+  margin-bottom: 4.5rem;
+  animation: revealUp 0.7s ease both;
+  animation-play-state: paused;
+}
+.chapter.visible { animation-play-state: running; }
+@keyframes revealUp { from { opacity:0; transform: translateY(24px); } to { opacity:1; transform: translateY(0); } }
+
+.chapter-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 0.9rem;
+  display: flex; align-items: center; gap: 0.7rem;
+}
+.chapter-label::before { content:''; width:16px; height:1px; background: var(--gold); }
+
+.chapter-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.55rem, 2.8vw, 2rem);
+  font-weight: 700; color: var(--snow); line-height: 1.18;
+  margin-bottom: 1.6rem;
+}
+.chapter-heading em { font-style: italic; color: var(--gold); }
+
+.chapter p {
+  font-size: 1.08rem; font-weight: 300; color: var(--mist);
+  line-height: 1.95; margin-bottom: 1.2rem;
+}
+.chapter p:last-child { margin-bottom: 0; }
+
+/* Pull quote */
+.pull-quote {
+  margin: 2.5rem 0;
+  padding: 1.8rem 2rem;
+  border-left: 3px solid var(--gold);
+  background: rgba(232,184,75,0.05);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.pull-quote p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem; font-style: italic; font-weight: 700;
+  color: var(--snow); line-height: 1.55;
+  margin-bottom: 0 !important;
+}
+
+/* Six-pillar highlights */
+.pillars {
+  margin: 3rem 0;
+  display: flex; flex-direction: column; gap: 1.2rem;
+}
+.pillar {
+  display: flex; gap: 1.4rem; align-items: flex-start;
+  padding: 1.4rem 1.6rem;
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), transform var(--transition);
+}
+.pillar:hover { border-color: rgba(232,184,75,0.3); transform: translateX(4px); }
+.pillar-num {
+  flex-shrink: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 900;
+  color: rgba(232,184,75,0.25); line-height: 1;
+  min-width: 2rem; text-align: right;
+  margin-top: -2px;
+}
+.pillar-text h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem; font-weight: 700;
+  color: var(--snow); margin-bottom: 0.4rem; line-height: 1.2;
+}
+.pillar-text p {
+  font-size: 0.92rem; font-weight: 300; color: var(--mist);
+  line-height: 1.7; margin-bottom: 0 !important;
+}
+
+/* Popularity tags */
+.reason-tags {
+  display: flex; flex-wrap: wrap; gap: 0.6rem;
+  margin: 1.5rem 0 0;
+}
+.reason-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+  border: 1px solid rgba(163,184,153,0.3);
+  color: var(--sage); padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  background: rgba(107,143,94,0.07);
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+.reason-tag:hover { border-color: var(--gold); color: var(--gold); background: rgba(232,184,75,0.07); }
+
+/* Divider */
+.section-rule {
+  width: 100%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(107,143,94,0.3), transparent);
+  margin: 3.5rem 0;
+}
+
+/* Closing card */
+.closing-card {
+  background: linear-gradient(145deg, rgba(44,74,44,0.7), rgba(26,46,26,0.9));
+  border: 1px solid rgba(232,184,75,0.2);
+  border-radius: var(--radius);
+  padding: 2.5rem 2.8rem;
+  margin-top: 2rem;
+  position: relative; overflow: hidden;
+}
+.closing-card::before {
+  content: '"';
+  position: absolute; top: -0.5rem; left: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 8rem; color: rgba(232,184,75,0.08);
+  line-height: 1; pointer-events: none;
+}
+.closing-card p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; font-style: italic; font-weight: 700;
+  color: var(--snow); line-height: 1.7;
+  position: relative; z-index: 1;
+  margin-bottom: 0;
+}
+.closing-card p em { color: var(--gold); font-style: normal; }
+
+/* ── SIDEBAR ── */
+.article-sidebar {
+  padding-top: 5rem;
+  position: sticky; top: 88px;
+  display: flex; flex-direction: column; gap: 1.4rem;
+}
+
+/* Table of contents */
+.toc-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem;
+}
+.toc-card h4 {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.1rem;
+}
+.toc-list { list-style: none; display: flex; flex-direction: column; gap: 0.1rem; }
+.toc-list a {
+  display: block; padding: 0.55rem 0.7rem;
+  font-size: 0.88rem; font-weight: 300; color: var(--mist);
+  text-decoration: none; border-radius: 6px;
+  transition: background var(--transition), color var(--transition);
+  border-left: 2px solid transparent;
+}
+.toc-list a:hover { background: rgba(107,143,94,0.1); color: var(--snow); border-left-color: var(--gold); }
+.toc-list a.active { background: rgba(232,184,75,0.08); color: var(--gold); border-left-color: var(--gold); }
+
+/* Founder card */
+.founder-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem;
+}
+.founder-card h4 {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1rem;
+}
+.founder-avatar {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--moss), var(--fern));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; font-weight: 900; color: var(--snow);
+  margin-bottom: 0.9rem;
+  border: 2px solid rgba(232,184,75,0.25);
+}
+.founder-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem; font-weight: 700; color: var(--snow);
+  margin-bottom: 0.15rem;
+}
+.founder-role {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 0.9rem;
+}
+.founder-card p {
+  font-size: 0.88rem; font-weight: 300; color: var(--mist);
+  line-height: 1.7;
+}
+
+/* Quick facts */
+.facts-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem;
+}
+.facts-card h4 {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.1rem;
+}
+.fact-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(107,143,94,0.12);
+}
+.fact-row:last-child { border-bottom: none; padding-bottom: 0; }
+.fact-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--sage);
+}
+.fact-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem; font-weight: 700; color: var(--snow);
+  text-align: right;
+}
+
+/* CTA */
+.sidebar-cta {
+  background: linear-gradient(135deg, rgba(44,74,44,0.9), rgba(74,103,65,0.9));
+  border: 1px solid rgba(232,184,75,0.25);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.5rem; text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+.sidebar-cta p {
+  font-size: 0.95rem; color: var(--mist); line-height: 1.65;
+  margin-bottom: 1.2rem; font-weight: 300;
+}
+.cta-btn {
+  display: block; background: var(--gold); color: var(--charcoal);
+  text-decoration: none; padding: 0.85rem 1.4rem;
+  border-radius: 4px; font-family: 'DM Mono', monospace;
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+  box-shadow: 0 4px 16px rgba(232,184,75,0.25);
+  margin-bottom: 0.7rem;
+}
+.cta-btn:hover { background: var(--amber); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,184,75,0.35); }
+.cta-ghost {
+  display: block; text-decoration: none;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--sage); padding: 0.7rem;
+  border: 1px solid rgba(163,184,153,0.2); border-radius: 4px;
+  transition: color var(--transition), border-color var(--transition);
+}
+.cta-ghost:hover { color: var(--snow); border-color: rgba(163,184,153,0.4); }
+
+/* ── PHOTO DIVIDER ── */
+.photo-divider {
+  width: 100%; height: 320px;
+  position: relative; overflow: hidden;
+  margin: 0;
+}
+.photo-divider img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+}
+.photo-divider-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, rgba(10,18,10,0.85) 0%, rgba(10,18,10,0.3) 50%, rgba(10,18,10,0.7) 100%);
+  display: flex; align-items: center; justify-content: center;
+}
+.photo-divider-text {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-style: italic; font-weight: 700;
+  color: var(--snow); text-align: center;
+  max-width: 600px; padding: 0 2rem;
+  line-height: 1.5;
+}
+.photo-divider-text em { color: var(--gold); font-style: normal; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--charcoal);
+  border-top: 1px solid rgba(107,143,94,0.15);
+  padding: 3.5rem 3rem 2rem;
+}
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2.5rem; padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(163,184,153,0.1);
+  max-width: 1120px; margin: 0 auto;
+}
+.footer-brand-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 900; color: var(--gold); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.5rem; }
+.footer-brand-sub { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage); margin-bottom: 1rem; }
+.footer-brand p { font-size: 0.9rem; color: rgba(163,184,153,0.55); line-height: 1.7; max-width: 240px; font-weight: 300; }
+.footer-col h4 { font-family: 'DM Mono', monospace; font-size: 0.6rem; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+.footer-col a { text-decoration: none; color: rgba(163,184,153,0.55); font-size: 0.9rem; transition: color var(--transition); font-weight: 300; }
+.footer-col a:hover { color: var(--mist); }
+.footer-bottom { max-width: 1120px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; flex-wrap: wrap; gap: 0.7rem; }
+.footer-bottom p { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: rgba(163,184,153,0.3); letter-spacing: 0.1em; }
+.footer-tagline { font-style: italic; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1024px) {
+  .article-wrap { grid-template-columns: 1fr; gap: 0; }
+  .article-sidebar { position: static; padding-top: 0; flex-direction: row; flex-wrap: wrap; }
+  .article-sidebar > * { flex: 1 1 280px; }
+}
+@media (max-width: 768px) {
+  nav { padding: 0 1.5rem; }
+  .nav-links { display: none; }
+  .hero-content { padding: 0 1.5rem 3.5rem; }
+  .article-wrap { padding: 0 1.5rem 4rem; }
+  .article-main { padding-top: 3rem; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .footer-brand { grid-column: 1/-1; }
+  footer { padding: 3rem 1.5rem 1.5rem; }
+  .photo-divider { height: 220px; }
+  .article-sidebar { flex-direction: column; }
+}
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .pillars { gap: 0.8rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" class="logo">
+    <span class="logo-main">Kokhe Danda Trek</span>
+    <span class="logo-sub">by Discover Parbat</span>
+  </a>
+  <ul class="nav-links">
+  
+    <li><a href="about-the-trek.html">About</a></li>
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="hero-bg"></div>
+  <div class="hero-image-strip">
+    <img src="kokhe.jpg" alt="Kokhe Danda ridge landscape">
+  </div>
+
+  <!-- Floating particles -->
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- Mountain SVG -->
+  <svg class="hero-ridges" viewBox="0 0 1440 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="opacity:0.15;">
+    <path d="M0,280 L0,180 L140,100 L240,150 L360,60 L460,120 L560,80 L660,140 L760,40 L860,100 L960,55 L1060,115 L1160,70 L1280,130 L1440,80 L1440,280 Z" fill="rgba(163,184,153,0.6)"/>
+    <path d="M0,280 L0,220 L200,170 L360,200 L520,155 L680,185 L840,145 L1000,175 L1160,148 L1320,170 L1440,155 L1440,280 Z" fill="rgba(107,143,94,0.5)"/>
+    <path d="M0,280 L0,255 L240,235 L480,250 L720,230 L960,248 L1200,232 L1440,245 L1440,280 Z" fill="rgba(44,74,44,0.6)"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-breadcrumb">
+      <a href="index.html">Home</a> › <span>About the Trek</span>
+    </div>
+    <div class="hero-kicker">The Story Behind the Trail</div>
+    <h1 class="hero-title">
+      A Journey of Vision,
+      <em>Silence &amp; Soul</em>
+    </h1>
+    <p class="hero-sub">
+      How an unnoticed ridge in Parbat became one of Nepal's most authentic trekking experiences — through local footsteps, quiet perseverance, and community.
+    </p>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<div class="article-wrap">
+
+  <!-- MAIN CONTENT -->
+  <main class="article-main">
+
+    <!-- Chapter 1 -->
+    <div class="chapter" id="ch-intro">
+      <div class="chapter-label">Introduction</div>
+      <h2 class="chapter-heading">More Than a Trail —<br>A <em>Story of Vision</em></h2>
+      <p>The Kokhe Danda Trek is not just another trekking route in Nepal. It is a story of vision, patience, and deep connection to the land. While many Himalayan trails grew through commercial expansion, Kokhe Danda emerged quietly — shaped by local footsteps, community effort, and a desire to bring unseen beauty into the light.</p>
+      <p>Today, it stands as one of the most authentic and peaceful trekking experiences in Nepal, offering not only Himalayan views but a journey into culture, silence, and self-reflection.</p>
+
+      <div class="pull-quote">
+        <p>"A trek that is not only seen, but truly felt."</p>
+      </div>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <!-- Chapter 2 -->
+    <div class="chapter" id="ch-contrast">
+      <div class="chapter-label">The Contrast</div>
+      <h2 class="chapter-heading">A Popular Trail and<br>an <em>Overlooked Region</em></h2>
+      <p>For decades, Poon Hill has been one of Nepal's most popular short treks. Known for its accessibility and breathtaking sunrise views, it continues to attract trekkers from around the world.</p>
+      <p>Yet, just across the hills lies Parbat — a district equally rich in natural beauty but largely absent from the trekking map. Despite sharing the same Himalayan ranges, lush forests, and traditional villages, Parbat saw almost no foreign trekkers.</p>
+      <p>This contrast raised a simple yet powerful question:</p>
+
+      <div class="pull-quote">
+        <p>"Why should such beauty remain unseen?"</p>
+      </div>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <!-- Chapter 3 -->
+    <div class="chapter" id="ch-vision">
+      <div class="chapter-label">The Beginning</div>
+      <h2 class="chapter-heading">The Beginning<br>of a <em>Vision</em></h2>
+      <p>Growing up near Khurkot, overlooking the hills of Haljure, Sameer Regmi observed this imbalance closely. The mountains did not change across districts — only awareness did.</p>
+      <p>This realization planted the seed for a larger purpose: to bring recognition to Parbat and create opportunities for local communities through tourism. From this idea, <strong style="color:var(--snow);">Discover Parbat</strong> was founded — not merely as a trekking company, but as a platform to showcase hidden destinations, local culture, and authentic Himalayan life.</p>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <!-- Chapter 4 -->
+    <div class="chapter" id="ch-before">
+      <div class="chapter-label">Before It Was Known</div>
+      <h2 class="chapter-heading">Before Kokhe Danda<br><em>Was on the Map</em></h2>
+      <p>In its early days, Discover Parbat focused on promoting lesser-known areas such as Haljure, Lespar, Phalame Danda, and the Hampal–Jaljala region.</p>
+      <p>At that time, Kokhe Danda was not a trekking destination. It was known only to locals from Jhillibarang in Modi Gaupalika. There were no established routes, no visibility, and no structured trekking experience.</p>
+      <p>However, everything changed with a simple discovery — a teahouse being built on Kokhe Danda. The presence of a teahouse meant possibility. Through connections with the teahouse owner and contributors like Sudip Guru, who shared visuals online, a new idea took shape: to connect existing local trails into a complete trekking route, with Kokhe Danda as the central highlight.</p>
+      <p>This was not about creating something artificial — it was about recognizing what already existed and giving it direction.</p>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <!-- Chapter 5 -->
+    <div class="chapter" id="ch-building">
+      <div class="chapter-label">The Build</div>
+      <h2 class="chapter-heading">Building the Trek,<br><em>Village by Village</em></h2>
+      <p>The development of the Kokhe Danda Trek was a gradual and community-driven process. Existing village trails were linked together, forming a natural route connecting Haljure, Lespar, Sarga, Phalame Danda, and Kokhe Danda itself.</p>
+      <p>At the same time, local communities were introduced to the potential of tourism. Homestays were encouraged to improve facilities while authenticity was preserved as a non-negotiable priority. Photos and videos were shared online, slowly attracting attention — first from domestic trekkers, then internationally.</p>
+
+      <div class="pull-quote">
+        <p>"The first trekkers were mostly from Parbat and Baglung — neighbors discovering their own backyard."</p>
+      </div>
+
+      <p>A major turning point came with the visit of <strong style="color:var(--snow);">Ghumante</strong>, one of Nepal's leading travel content creators. His coverage brought Kokhe Danda into the spotlight significantly, and soon inquiries began arriving from international trekkers as well. This marked the transition of Kokhe Danda from a local trail to an emerging trekking destination.</p>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <!-- Chapter 6 — Pillars -->
+    <div class="chapter" id="ch-unique">
+      <div class="chapter-label">What Makes It Unique</div>
+      <h2 class="chapter-heading">Six Reasons This Trek<br>Stands <em>Apart</em></h2>
+
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-num">1</div>
+          <div class="pillar-text">
+            <h4>Authentic Cultural Immersion</h4>
+            <p>In places like Lespar, trekkers stay in traditional homes, eat meals prepared in local kitchens, and engage directly with the community — a rare opportunity to experience real village life as it truly is.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">2</div>
+          <div class="pillar-text">
+            <h4>Peaceful and Undisturbed Trails</h4>
+            <p>Unlike commercial trekking routes, Kokhe Danda remains quiet and uncrowded. This allows for a deeper connection with nature and a more personal trekking experience at every step.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">3</div>
+          <div class="pillar-text">
+            <h4>Rich Natural Landscapes</h4>
+            <p>The trail passes through dense rhododendron and oak forests in the Hampal–Jaljala region, offering seasonal beauty and biodiversity that surprises even experienced trekkers.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">4</div>
+          <div class="pillar-text">
+            <h4>Panoramic Himalayan Views</h4>
+            <p>Viewpoints such as Kokhe Danda, Phalame Danda, and Haljure provide stunning vistas of the Annapurna and Dhaulagiri ranges — often without another soul in sight.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">5</div>
+          <div class="pillar-text">
+            <h4>Warm Local Hospitality</h4>
+            <p>The principle of <em>Atithi Devo Bhava</em> — Guest is God — is deeply felt throughout the trek. Visitors are welcomed with sincerity, kindness, and a warmth that commercial routes rarely offer.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">6</div>
+          <div class="pillar-text">
+            <h4>A Spiritual Experience</h4>
+            <p>Beyond landscapes, the trek offers something intangible — a sense of stillness. Walking through silent forests, sharing moments with locals, and sitting under star-filled skies often becomes a journey inward as much as outward.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <!-- Chapter 7 -->
+    <div class="chapter" id="ch-popularity">
+      <div class="chapter-label">Why It's Growing</div>
+      <h2 class="chapter-heading">Why Kokhe Danda Is<br><em>Gaining Recognition</em></h2>
+      <p>From a ridge known only to locals, Kokhe Danda has grown into a trail that trekkers seek out from across the world — not because of marketing, but because of genuine experience and word of mouth.</p>
+
+      <div class="reason-tags">
+        <span class="reason-tag">One of Nepal's best off-the-beaten-path treks</span>
+        <span class="reason-tag">Ideal 5-day route in the Annapurna region</span>
+        <span class="reason-tag">Combines culture, nature & spirituality</span>
+        <span class="reason-tag">Less crowded alternative to Poon Hill</span>
+        <span class="reason-tag">Domestic & international recognition growing</span>
+        <span class="reason-tag">Community-led, responsibly run</span>
+      </div>
+    </div>
+
+    <div class="section-rule"></div>
+
+    <!-- Closing -->
+    <div class="chapter" id="ch-closing">
+      <div class="chapter-label">In Closing</div>
+      <h2 class="chapter-heading">A Journey That Is<br><em>Truly Felt</em></h2>
+      <p>The Kokhe Danda Trek is more than a destination — it is a reflection of what mindful tourism can achieve. From an unnoticed ridge known only to locals, it has grown into a meaningful trekking experience through vision, community effort, and authentic storytelling.</p>
+
+      <div class="closing-card">
+        <p>For those seeking not just views, but <em>connection</em> — for those who value silence, culture, and depth — the Kokhe Danda Trek offers something rare in today's world: a journey that is not only seen, but truly felt.</p>
+      </div>
+    </div>
+
+  </main><!-- /article-main -->
+
+  <!-- SIDEBAR -->
+  <aside class="article-sidebar">
+
+    <!-- Table of Contents -->
+    <div class="toc-card">
+      <h4>In This Story</h4>
+      <ul class="toc-list" id="toc">
+        <li><a href="#ch-intro">Introduction</a></li>
+        <li><a href="#ch-contrast">The Contrast</a></li>
+        <li><a href="#ch-vision">A Vision is Born</a></li>
+        <li><a href="#ch-before">Before the Map</a></li>
+        <li><a href="#ch-building">Building the Trek</a></li>
+        <li><a href="#ch-unique">What Makes It Unique</a></li>
+        <li><a href="#ch-popularity">Why It's Growing</a></li>
+        <li><a href="#ch-closing">In Closing</a></li>
+      </ul>
+    </div>
+
+    <!-- Founder -->
+    <div class="founder-card">
+      <h4>Founded By</h4>
+      <div class="founder-avatar">SR</div>
+      <div class="founder-name">Sameer Regmi</div>
+      <div class="founder-role">Founder, Discover Parbat</div>
+      <p>Born near Khurkot, overlooking the hills of Haljure. His vision turned a forgotten ridge into one of Nepal's most authentic trekking experiences.</p>
+    </div>
+
+    <!-- Quick facts -->
+    <div class="facts-card">
+      <h4>Trek at a Glance</h4>
+      <div class="fact-row">
+        <span class="fact-label">District</span>
+        <span class="fact-value">Parbat, Nepal</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Max Altitude</span>
+        <span class="fact-value">3,310 m</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Duration</span>
+        <span class="fact-value">3 – 6 Days</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Difficulty</span>
+        <span class="fact-value">Easy – Moderate</span>
+      </div>
+      <div class="fact-row">
+        <span class="fact-label">Best Season</span>
+        <span class="fact-value">Mar–May · Oct–Dec</span>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="sidebar-cta">
+      <p>Ready to experience the ridge for yourself? Choose your itinerary and book directly with Discover Parbat.</p>
+      <a href="https://www.discoverparbat.com" class="cta-btn">View All Treks</a>
+      <a href="mailto:discoverparbat@gmail.com" class="cta-ghost">Send an Enquiry</a>
+    </div>
+
+  </aside>
+
+</div><!-- /article-wrap -->
+
+<!-- PHOTO DIVIDER -->
+<div class="photo-divider">
+  <img src="kokhe1.jpg" alt="Kokhe Danda panoramic view">
+  <div class="photo-divider-overlay">
+    <p class="photo-divider-text">
+      "The mountains did not change across districts —<br>only <em>awareness</em> did."
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-name">Kokhe Danda Trek</div>
+      <div class="footer-brand-sub">by Discover Parbat · Parbat, Nepal</div>
+      <p>Connecting travelers with authentic Himalayan experiences in Parbat, Nepal. Locally guided, responsibly run.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about-the-trek.html">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Treks</h4>
+      <ul>
+        <li><a href="Short-Kokhe-Danda-Trek.html">Short Trek (3 Days)</a></li>
+        <li><a href="Kokhe-Danda-Trek.html">Classic Trek (5 Days)</a></li>
+        <li><a href="Multiple-Viewpoints-Trek.html">Short Multiple Viewpoints Trek (6 Days)</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/discoverparbat" target="_blank">Facebook</a></li>
+        <li><a href="https://maps.app.goo.gl/wJ8wzmghg8FJQt8T8" target="_blank">Google</a></li>
+        <li><a href="mailto:discoverparbat@gmail.com">Email Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Kokhe Danda Trek · Discover Parbat. All rights reserved.</p>
+    <p class="footer-tagline">Walk slow, go far.</p>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll shadow
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+
+  // Reading progress bar
+  const fill = document.getElementById('progressFill');
+  window.addEventListener('scroll', () => {
+    const total = document.body.scrollHeight - window.innerHeight;
+    fill.style.width = (window.scrollY / total * 100) + '%';
+  });
+
+  // Scroll reveal for chapters
+  const chapters = document.querySelectorAll('.chapter');
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  chapters.forEach(c => revealObs.observe(c));
+
+  // Active TOC link
+  const tocLinks = document.querySelectorAll('.toc-list a');
+  const chapterEls = document.querySelectorAll('.chapter[id]');
+  const tocObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        tocLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.toc-list a[href="#${e.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+  chapterEls.forEach(c => tocObs.observe(c));
+</script>
+
+</body>
+</html>
