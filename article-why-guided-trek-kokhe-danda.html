@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Kokhe Danda Trek – Discover Parbat" />
 <meta property="og:description" content="Why We Recommend a Guided Trek to Kokhe Danda – Kokhe Danda Trek" />
-<meta property="og:image" content="https://yourwebsite.com/kokhe.jpg" />
+<meta property="og:image" content="https://kokhedandatrek.com/kokhe.jpg" />
+<meta property="og:url" content="https://kokhedandatrek.com/article-why-guided-trek-kokhe-danda.html" />
+<meta property="og:type" content="article" />
 
   <title>Why We Recommend a Guided Trek to Kokhe Danda – Kokhe Danda Trek</title>
   <meta name="description" content="Hiring a guide for Kokhe Danda isn't mandatory — but here's why trekking with Discover Parbat makes the experience richer, safer, and more meaningful.">
   <meta name="keywords" content="Kokhe Danda Trek, Parbat trekking, Nepal off the beaten path, Discover Parbat, Dhaulagiri views, Annapurna trek" />
+  <link rel="canonical" href="https://kokhedandatrek.com/article-why-guided-trek-kokhe-danda.html" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -121,6 +124,22 @@
 
     .article-body p { font-size: 1.12rem; font-weight: 300; color: var(--mist); line-height: 1.85; margin-bottom: 1.6rem; }
 
+    /* Inline internal links */
+    .article-body p a,
+    .benefit-desc a,
+    .safety-item a,
+    .flex-list li a,
+    .statement a {
+      color: var(--gold); text-decoration: none;
+      border-bottom: 1px solid rgba(232,184,75,0.35);
+      transition: color 0.25s, border-color 0.25s;
+    }
+    .article-body p a:hover,
+    .benefit-desc a:hover,
+    .safety-item a:hover,
+    .flex-list li a:hover,
+    .statement a:hover { color: var(--snow); border-color: var(--gold); }
+
     .article-body h2 { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 700; color: var(--snow); line-height: 1.2; margin: 3rem 0 1.2rem; position: relative; }
     .article-body h2::before { content: ''; position: absolute; left: -1.4rem; top: 50%; transform: translateY(-50%); width: 4px; height: 60%; background: var(--gold); border-radius: 2px; }
 
@@ -174,6 +193,14 @@
     .verdict-col ul li { font-size: 0.96rem; font-weight: 300; color: var(--mist); padding-left: 1rem; position: relative; }
     .verdict-col ul li::before { content: '✕'; position: absolute; left: 0; color: rgba(163,184,153,0.3); font-size: 0.7rem; top: 4px; }
     .verdict-col.right ul li::before { content: '✓'; color: var(--fern); }
+
+    /* Trek CTA strip (internal link to trek page) */
+    .trek-cta-strip { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; margin: 2.5rem 0; padding: 1.5rem 1.8rem; background: linear-gradient(135deg, rgba(44,74,44,0.55), rgba(26,46,26,0.75)); border: 1px solid rgba(232,184,75,0.22); border-radius: 6px; }
+    .trek-cta-text { flex: 1; min-width: 220px; }
+    .trek-cta-label { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.35rem; }
+    .trek-cta-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--snow); line-height: 1.3; }
+    .trek-cta-btn { display: inline-block; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; background: var(--gold); color: var(--charcoal); padding: 0.75rem 1.4rem; border-radius: 3px; transition: background 0.25s, transform 0.2s; white-space: nowrap; }
+    .trek-cta-btn:hover { background: var(--amber); transform: translateY(-2px); }
 
     /* Reviews section */
     .reviews-section { margin: 3rem 0; }
@@ -241,6 +268,7 @@
     .final-thought { margin-top: 3rem; padding: 2.2rem; background: linear-gradient(135deg, rgba(44,74,44,0.6), rgba(26,46,26,0.8)); border: 1px solid rgba(107,143,94,0.25); border-radius: 6px; text-align: center; }
     .final-thought p { font-family: 'Playfair Display', serif; font-size: 1.15rem !important; font-style: italic; color: var(--snow) !important; line-height: 1.7 !important; margin-bottom: 0.5rem !important; }
     .final-thought p:last-child { margin-bottom: 0 !important; color: var(--gold) !important; font-size: 1.05rem !important; }
+    .final-thought p a { color: inherit !important; border-bottom-color: rgba(232,184,75,0.5); }
 
     /* Tags */
     .article-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(107,143,94,0.15); }
@@ -268,6 +296,8 @@
     .book-widget p { font-size: 0.88rem; font-weight: 300; color: var(--mist); line-height: 1.6; margin-bottom: 1.2rem; }
     .book-widget-btn { display: block; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; background: var(--gold); color: var(--charcoal); padding: 0.75rem 1.5rem; border-radius: 3px; transition: background 0.25s, transform 0.2s; box-shadow: 0 4px 20px rgba(232,184,75,0.25); }
     .book-widget-btn:hover { background: var(--amber); transform: translateY(-2px); }
+    .book-widget-link { display: block; margin-top: 0.7rem; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; color: var(--gold); border: 1px solid rgba(232,184,75,0.35); padding: 0.65rem 1.5rem; border-radius: 3px; transition: background 0.25s, color 0.25s; }
+    .book-widget-link:hover { background: rgba(232,184,75,0.1); color: var(--snow); }
     .book-widget-sub { font-family: 'DM Mono', monospace; font-size: 0.56rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(163,184,153,0.4); margin-top: 0.8rem; }
 
     /* Sidebar review links */
@@ -431,11 +461,11 @@
       </p>
 
       <p>
-        The Kokhe Danda Trek is one of Nepal's hidden gems — peaceful, scenic, and still untouched by heavy commercialization. Unlike some trekking regions, hiring a guide here is not enforced. You're free to explore independently.
+        The <a href="Kokhe-Danda-Trek.html">Kokhe Danda Trek</a> is one of Nepal's hidden gems — peaceful, scenic, and still untouched by heavy commercialization. Unlike some trekking regions, hiring a guide here is not enforced. You're free to explore independently.
       </p>
 
       <p>
-        But at Discover Parbat, we strongly recommend a guided trek — not as a rule, but as a way to truly experience the depth, safety, and soul of Kokhe Danda.
+        But at Discover Parbat, we strongly recommend a <a href="Kokhe-Danda-Trek.html">guided Kokhe Danda trek</a> — not as a rule, but as a way to truly experience the depth, safety, and soul of Kokhe Danda.
       </p>
 
       <h2>When Are Guides Actually Mandatory in Nepal?</h2>
@@ -464,7 +494,7 @@
           <div class="benefit-icon">🏘️</div>
           <div class="benefit-content">
             <span class="benefit-title">Cultural Connection</span>
-            <span class="benefit-desc">Learn about the local Magar communities, traditions, and daily lifestyle in villages like Lespar — stories you'd never find in a guidebook.</span>
+            <span class="benefit-desc">Learn about the local Magar communities, traditions, and daily lifestyle in villages like <a href="article-magar-culture-lespar.html">Lespar</a> — stories you'd never find in a guidebook.</span>
           </div>
         </div>
         <div class="benefit-card">
@@ -494,7 +524,7 @@
       <div class="safety-box reveal">
         <div class="safety-box-label">Situations a Guide Helps Navigate</div>
         <div class="safety-list">
-          <div class="safety-item">Sudden weather changes on the ridge</div>
+          <div class="safety-item">Sudden weather changes on the ridge (see the <a href="article-best-season-kokhe-danda.html">best season to trek</a>)</div>
           <div class="safety-item">Minor injuries or unexpected fatigue</div>
           <div class="safety-item">Route confusion in dense forest sections</div>
           <div class="safety-item">Language barriers with local villages</div>
@@ -503,7 +533,7 @@
       </div>
 
       <p>
-        This is especially valuable on Kokhe Danda, where trails are peaceful — but also less crowded and less marked compared to popular commercial routes like Poon Hill.
+        This is especially valuable on Kokhe Danda, where trails are peaceful — but also less crowded and less marked compared to popular commercial routes like <a href="article-kokhe-danda-vs-poon-hill.html">Poon Hill</a>.
       </p>
 
       <h2>Why Discover Parbat Guides Make a Real Difference</h2>
@@ -516,7 +546,7 @@
             <div class="dp-feature-icon">🧭</div>
             <div class="dp-feature-title">Founders of the Trail</div>
           </div>
-          <p>Discover Parbat is not just another trekking company — we are the pioneers of the Kokhe Danda Trek. We don't just know the trail. We know every stone on it.</p>
+          <p>Discover Parbat is not just another trekking company — we are the pioneers of the <a href="Kokhe-Danda-Trek.html">Kokhe Danda Trek</a>. We don't just know the trail. We know every stone on it.</p>
         </div>
 
         <div class="dp-feature">
@@ -524,7 +554,7 @@
             <div class="dp-feature-icon">🏡</div>
             <div class="dp-feature-title">100% Local Expertise</div>
           </div>
-          <p>All our guides and porters are locals from the region — with deep knowledge of the landscape, personal connections with villages and families, and authentic cultural insight. You're not just visiting. You're being welcomed.</p>
+          <p>All our guides and porters are locals from the region — with deep knowledge of the landscape, personal connections with villages and families like our <a href="article-haljure-panoramic-viewpoint-&amp;-authentic-homestay.html">homestay hosts in Haljure</a>, and authentic cultural insight. You're not just visiting. You're being welcomed.</p>
         </div>
 
         <div class="dp-feature">
@@ -534,10 +564,11 @@
           </div>
           <p>Unlike agencies that follow fixed itineraries, we understand that trekking is a real-life experience, not a timetable. Want to stay longer in Lespar? Need a slower pace? Weather changes your plan? We adapt.</p>
           <ul class="flex-list" style="margin-top:0.6rem;">
-            <li>Want to stay longer in a beautiful village like Lespar?</li>
+            <li>Want to stay longer in a beautiful village like <a href="article-magar-culture-lespar.html">Lespar</a>?</li>
             <li>Feeling tired and need a slower pace?</li>
             <li>Weather forces a change of plan?</li>
           </ul>
+          <p style="margin-top:0.5rem;">Whether you choose the <a href="Short-Kokhe-Danda-Trek.html">3-day Short Kokhe Danda Trek</a>, the <a href="Kokhe-Danda-Trek.html">5-day Classic Kokhe Danda Trek</a>, or the <a href="Short-Multiple-Viewpoints-Trek.html">6-day Multiple Viewpoints Trek</a>, your guide shapes each day around you.</p>
           <p style="margin-top:0.5rem; font-style:italic; color:rgba(220,232,213,0.55);">We listen. We adjust. Your journey flows naturally.</p>
         </div>
 
@@ -574,6 +605,17 @@
           </ul>
         </div>
       </div>
+
+      <!-- TREK PAGE CTA -->
+      <div class="trek-cta-strip reveal">
+        <div class="trek-cta-text">
+          <span class="trek-cta-label">Plan Your Guided Trek</span>
+          <div class="trek-cta-title">Kokhe Danda Trek – 5 Days: itinerary, cost &amp; what's included</div>
+        </div>
+        <a href="Kokhe-Danda-Trek.html" class="trek-cta-btn">View the Trek →</a>
+      </div>
+
+      <p>Every guided departure includes a local guide and porter, homestay accommodation, and three meals a day. Before you go, check our <a href="article-packing-list-kokhe-danda.html">Kokhe Danda packing list</a> so you travel light and ready.</p>
 
       <!-- REVIEWS SECTION -->
       <div class="reviews-section reveal">
@@ -622,7 +664,7 @@
       <div class="final-thought reveal">
         <p>Kokhe Danda is not just a destination — it's a feeling.</p>
         <p>And the right guide doesn't just take you there. They help you truly experience it.</p>
-        <p>The mountains are waiting. Let's walk them together.</p>
+        <p>The mountains are waiting. <a href="Kokhe-Danda-Trek.html">Let's walk them together.</a></p>
       </div>
 
       <div class="article-tags">
@@ -672,6 +714,35 @@
           </div>
         </div>
 
+        <!-- Book CTA -->
+        <div class="book-widget">
+          <div class="book-widget-title">Walk With<br><em>Discover Parbat</em></div>
+          <p>Book your guided Kokhe Danda Trek directly with the founders of this trail.</p>
+          <a href="Kokhe-Danda-Trek.html" class="book-widget-btn">See Itinerary &amp; Cost</a>
+          <a href="https://www.discoverparbat.com" target="_blank" rel="noopener" class="book-widget-link">Book the Trek</a>
+          <div class="book-widget-sub">discoverparbat.com</div>
+        </div>
+
+        <!-- Our treks -->
+        <div class="sidebar-widget">
+          <div class="widget-label">Choose Your Trek</div>
+          <a href="Kokhe-Danda-Trek.html" class="related-item">
+            <span class="related-cat">Most Popular · 5 Days</span>
+            <span class="related-title">Kokhe Danda Classic Trek</span>
+            <span class="related-time">Max 3,310m · Easy</span>
+          </a>
+          <a href="Short-Kokhe-Danda-Trek.html" class="related-item">
+            <span class="related-cat">Short · 3 Days</span>
+            <span class="related-title">Short Kokhe Danda Trek</span>
+            <span class="related-time">Ideal if you're short on time</span>
+          </a>
+          <a href="Short-Multiple-Viewpoints-Trek.html" class="related-item">
+            <span class="related-cat">Extended · 6 Days</span>
+            <span class="related-title">Multiple Viewpoints Trek</span>
+            <span class="related-time">More ridgelines, more sunrises</span>
+          </a>
+        </div>
+
         <!-- Reviews sidebar widget -->
         <div class="sidebar-widget">
           <div class="widget-label">Trekker Reviews</div>
@@ -699,14 +770,6 @@
               <span class="sidebar-review-arrow">→</span>
             </a>
           </div>
-        </div>
-
-        <!-- Book CTA -->
-        <div class="book-widget">
-          <div class="book-widget-title">Walk With<br><em>Discover Parbat</em></div>
-          <p>Book your guided Kokhe Danda Trek directly with the founders of this trail.</p>
-          <a href="https://www.discoverparbat.com" target="_blank" rel="noopener" class="book-widget-btn">Book the Trek</a>
-          <div class="book-widget-sub">discoverparbat.com</div>
         </div>
 
         <!-- Related articles -->
