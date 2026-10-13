@@ -5,10 +5,13 @@
   <meta property="og:title" content="Why Kokhe Danda Trek is a Better Alternative to Poon Hill Trek" />
   <meta property="og:description" content="Discover why Kokhe Danda Trek offers a quieter, more authentic, and more rewarding Himalayan experience than the overcrowded Poon Hill Trek." />
   <meta property="og:image" content="https://kokhedandatrek.com/kokhe10.jpg" />
+  <meta property="og:url" content="https://kokhedandatrek.com/why-kokhe-danda-trek-is-better-alternative-to-poonhill-trek.html" />
+  <meta property="og:type" content="article" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Why Kokhe Danda Trek is a Better Alternative to Poon Hill Trek – Kokhe Danda Trek</title>
   <meta name="description" content="Discover why Kokhe Danda Trek offers a quieter, more authentic, and more rewarding Himalayan experience than the overcrowded Poon Hill Trek.">
-  <meta name="keywords" content="Kokhe Danda Trek, Mohare Danda Trek, Poonhill Trek Alternative. Authentic trek, Less Touristy Trek, Trek without permit,, Poon Hill alternative, Nepal off the beaten path, Discover Parbat, Dhaulagiri views, Annapurna trek" />
+  <meta name="keywords" content="Kokhe Danda Trek, Mohare Danda Trek, Poon Hill Trek Alternative, Authentic trek, Less Touristy Trek, Trek without permit, Nepal off the beaten path, Discover Parbat, Dhaulagiri views, Annapurna trek" />
+  <link rel="canonical" href="https://kokhedandatrek.com/why-kokhe-danda-trek-is-better-alternative-to-poonhill-trek.html" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -97,30 +100,10 @@
       overflow: hidden;
     }
 
-    /* Hero title photo placeholder */
     .hero-photo-bg {
       position: absolute; inset: 0;
       background: linear-gradient(155deg, #0a180a 0%, #12261a 35%, #1e3320 65%, #152814 100%);
       overflow: hidden;
-    }
-
-    .hero-photo-placeholder {
-      position: absolute; inset: 0;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 0.8rem;
-    }
-
-    .hero-photo-placeholder-icon {
-      font-size: 2.5rem;
-      opacity: 0.2;
-    }
-
-    .hero-photo-placeholder-text {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase;
-      color: rgba(163,184,153,0.25);
-      border: 1px dashed rgba(163,184,153,0.2);
-      padding: 0.5rem 1.2rem; border-radius: 2px;
     }
 
     .hero-gradient-overlay {
@@ -255,6 +238,14 @@
       margin-bottom: 1.6rem;
     }
 
+    /* Inline internal links */
+    .article-body p a {
+      color: var(--gold); text-decoration: none;
+      border-bottom: 1px solid rgba(232,184,75,0.35);
+      transition: color 0.25s, border-color 0.25s;
+    }
+    .article-body p a:hover { color: var(--snow); border-color: var(--gold); }
+
     .article-body h2 {
       font-family: 'Playfair Display', serif;
       font-size: 1.75rem; font-weight: 700;
@@ -272,7 +263,7 @@
       border-radius: 2px;
     }
 
-    /* ── IN-ARTICLE PHOTO PLACEHOLDER ── */
+    /* ── IN-ARTICLE PHOTO ── */
     .article-photo {
       margin: 2.5rem 0;
       border-radius: 6px;
@@ -294,19 +285,6 @@
       content: '';
       position: absolute; inset: 0;
       background: linear-gradient(to top, rgba(10,24,10,0.4) 0%, transparent 60%);
-    }
-
-    .article-photo-icon {
-      font-size: 2rem; opacity: 0.2; position: relative; z-index: 1;
-    }
-
-    .article-photo-label {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase;
-      color: rgba(163,184,153,0.3);
-      border: 1px dashed rgba(163,184,153,0.2);
-      padding: 0.45rem 1.1rem; border-radius: 2px;
-      position: relative; z-index: 1;
     }
 
     .article-photo-caption {
@@ -415,6 +393,14 @@
     }
     .callout-box p:last-child { margin-bottom: 0 !important; }
 
+    /* ── TREK CTA STRIP ── */
+    .trek-cta-strip { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; margin: 2.5rem 0; padding: 1.5rem 1.8rem; background: linear-gradient(135deg, rgba(44,74,44,0.55), rgba(26,46,26,0.75)); border: 1px solid rgba(232,184,75,0.22); border-radius: 6px; }
+    .trek-cta-text { flex: 1; min-width: 220px; }
+    .trek-cta-label { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.35rem; }
+    .trek-cta-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--snow); line-height: 1.3; }
+    .trek-cta-btn { display: inline-block; font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; background: var(--gold); color: var(--charcoal); padding: 0.75rem 1.4rem; border-radius: 3px; transition: background 0.25s, transform 0.2s; white-space: nowrap; }
+    .trek-cta-btn:hover { background: var(--amber); transform: translateY(-2px); }
+
     /* ── FINAL THOUGHT ── */
     .final-thought {
       margin-top: 3rem;
@@ -432,71 +418,7 @@
       margin-bottom: 0.5rem !important;
     }
     .final-thought p:last-child { margin-bottom: 0 !important; color: var(--gold) !important; font-size: 1.05rem !important; font-style: normal !important; }
-
-    /* ── BOOK CTA BAND (inline article) ── */
-    .article-book-cta {
-      margin: 3.5rem 0;
-      padding: 2.5rem 2.2rem;
-      background: linear-gradient(145deg, rgba(44,74,44,0.85), rgba(26,46,26,0.95));
-      border: 1px solid rgba(232,184,75,0.25);
-      border-radius: 8px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .article-book-cta::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse 70% 60% at 50% 100%, rgba(232,184,75,0.08) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .article-book-cta-eyebrow {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--fern); margin-bottom: 0.9rem;
-      display: flex; align-items: center; justify-content: center; gap: 0.6rem;
-    }
-    .article-book-cta-eyebrow::before,
-    .article-book-cta-eyebrow::after { content: ''; width: 20px; height: 1px; background: var(--fern); }
-
-    .article-book-cta h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.7rem; font-weight: 700;
-      color: var(--snow); line-height: 1.2;
-      margin-bottom: 0.6rem;
-      position: relative; z-index: 1;
-    }
-    .article-book-cta h3 em { font-style: italic; color: var(--gold); }
-
-    .article-book-cta p {
-      font-size: 1rem !important; font-weight: 300;
-      color: rgba(220,232,213,0.75) !important;
-      line-height: 1.65 !important;
-      max-width: 420px; margin: 0 auto 1.6rem !important;
-      position: relative; z-index: 1;
-    }
-
-    .article-book-btn {
-      display: inline-flex; align-items: center; gap: 0.6rem;
-      font-family: 'DM Mono', monospace;
-      font-size: 0.7rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase;
-      text-decoration: none;
-      background: var(--gold); color: var(--charcoal);
-      padding: 0.9rem 2rem; border-radius: 3px;
-      transition: background 0.25s, transform 0.2s;
-      box-shadow: 0 6px 28px rgba(232,184,75,0.3);
-      position: relative; z-index: 1;
-    }
-    .article-book-btn:hover { background: var(--amber); transform: translateY(-2px); }
-    .article-book-btn svg { width: 13px; height: 13px; stroke: var(--charcoal); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-
-    .article-book-sub {
-      display: block; margin-top: 0.9rem;
-      font-family: 'DM Mono', monospace;
-      font-size: 0.56rem; letter-spacing: 0.18em; text-transform: uppercase;
-      color: rgba(163,184,153,0.35);
-      position: relative; z-index: 1;
-    }
+    .final-thought p a { color: inherit !important; border-bottom-color: rgba(232,184,75,0.5); }
 
     /* Article tags */
     .article-tags {
@@ -547,7 +469,6 @@
     }
     .widget-label::before { content: ''; width: 14px; height: 1px; background: var(--gold); }
 
-    /* Key differences list */
     .diff-item {
       display: flex; gap: 0.9rem;
       padding: 0.8rem 0;
@@ -566,7 +487,6 @@
     }
     .diff-text strong { color: var(--snow); font-weight: 600; display: block; margin-bottom: 0.1rem; font-size: 0.93rem; }
 
-    /* Book widget */
     .book-widget {
       background: linear-gradient(145deg, rgba(44,74,44,0.8), rgba(26,46,26,0.95));
       border: 1px solid rgba(232,184,75,0.2);
@@ -595,13 +515,14 @@
       box-shadow: 0 4px 20px rgba(232,184,75,0.25);
     }
     .book-widget-btn:hover { background: var(--amber); transform: translateY(-2px); }
+    .book-widget-link { display: block; margin-top: 0.7rem; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; color: var(--gold); border: 1px solid rgba(232,184,75,0.35); padding: 0.65rem 1.5rem; border-radius: 3px; transition: background 0.25s, color 0.25s; }
+    .book-widget-link:hover { background: rgba(232,184,75,0.1); color: var(--snow); }
     .book-widget-sub {
       font-family: 'DM Mono', monospace;
       font-size: 0.56rem; letter-spacing: 0.14em; text-transform: uppercase;
       color: rgba(163,184,153,0.4); margin-top: 0.8rem;
     }
 
-    /* Related articles */
     .related-item {
       display: flex; flex-direction: column; gap: 0.3rem;
       padding: 0.9rem 0;
@@ -780,14 +701,8 @@
 
   <!-- ── HERO ── -->
   <section class="article-hero">
-    <!-- Title photo area -->
     <div class="hero-photo-bg">
-     <img src="kokhe10.jpg" alt="View from the Homestay at HAljure" style="width:100%;height:100%;object-fit:cover;opacity:0.55;">
-      <!-- Example: <img src="your-hero-photo.jpg" alt="Kokhe Danda viewpoint at sunrise" style="width:100%;height:100%;object-fit:cover;opacity:0.55;"> -->
-      <div class="hero-photo-placeholder">
-        <div class="hero-photo-placeholder-icon">🏔️</div>
-        <div class="hero-photo-placeholder-text">Add your hero / title photo here</div>
-      </div>
+      <img src="kokhe10.jpg" alt="View from the homestay at Haljure on the Kokhe Danda Trek" style="width:100%;height:100%;object-fit:cover;opacity:0.55;">
     </div>
     <div class="hero-gradient-overlay"></div>
     <svg class="hero-ridge" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
@@ -829,7 +744,7 @@
       </p>
 
       <p>
-        However, with increasing popularity and rapid development, the experience has changed significantly. Today, many trekkers are searching for a quieter and more authentic alternative. This is where the Kokhe Danda Trek stands out, offering everything that the Poon Hill Trek once promised — peace, raw beauty, and a deeper connection with nature and local culture.
+        However, with increasing popularity and rapid development, the experience has changed significantly. Today, many trekkers are searching for a quieter and more authentic alternative. This is where the <a href="Kokhe-Danda-Trek.html">Kokhe Danda Trek</a> stands out, offering everything that the Poon Hill Trek once promised — peace, raw beauty, and a deeper connection with nature and local culture.
       </p>
 
       <!-- ── COMPARISON TABLE ── -->
@@ -869,16 +784,13 @@
       </p>
 
       <p>
-        In contrast, the Kokhe Danda Trek offers a much quieter journey. The trail sees only a handful of trekkers, and in many cases, you may not encounter other foreign travelers throughout your entire trek. This sense of solitude allows for a deeper and more personal connection with the mountains.
+        In contrast, the Kokhe Danda Trek offers a much quieter journey. The trail sees only a handful of trekkers, and in many cases, you may not encounter other foreign travelers throughout your entire trek. This sense of solitude allows for a deeper and more personal connection with the mountains. For a side-by-side look at days, altitude and difficulty, read our full <a href="article-kokhe-danda-vs-poon-hill.html">Kokhe Danda vs Poon Hill comparison</a>.
       </p>
 
       <!-- ── SUB PHOTO 1 ── -->
       <div class="article-photo reveal">
         <div class="article-photo-inner">
-           <img src="poonhill.jpg" alt="Early Morning Crowd at Poonhill" style="width:100%;height:100%;object-fit:cover;">
-          <!-- REPLACE with: <img src="your-photo-crowds-vs-quiet.jpg" alt="Quiet trail on Kokhe Danda" style="width:100%;height:100%;object-fit:cover;"> -->
-          <div class="article-photo-icon">📷</div>
-          
+          <img src="poonhill.jpg" alt="Early morning crowd at Poon Hill viewpoint" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="article-photo-caption">Early Morning Crowd at Poonhill</div>
       </div>
@@ -891,7 +803,7 @@
       </p>
 
       <p>
-        On the Kokhe Danda Trek, you can still experience genuine local hospitality. Villages like Haljure and Sarga offer authentic homestay stays, where you are welcomed with warm hospitality and served locally sourced, traditional meals. Exploring Lespar village gives a true glimpse into the lifestyle and culture of a Himalayan community.
+        On the Kokhe Danda Trek, you can still experience genuine local hospitality. Villages like <a href="article-haljure-panoramic-viewpoint-&amp;-authentic-homestay.html">Haljure</a> and Sarga offer authentic homestay stays, where you are welcomed with warm hospitality and served locally sourced, traditional meals. Exploring <a href="article-magar-culture-lespar.html">Lespar village</a> gives a true glimpse into the lifestyle and culture of a Himalayan community.
       </p>
 
       <div class="pull-quote reveal">
@@ -906,16 +818,13 @@
       </p>
 
       <p>
-        From Kokhe Danda, the views are even more expansive. In addition to Annapurna and Dhaulagiri, you can also witness peaks from the Manaslu and Langtang ranges, offering a wider and more immersive Himalayan panorama.
+        From Kokhe Danda, the views are even more expansive. In addition to Annapurna and Dhaulagiri, you can also witness peaks from the Manaslu and Langtang ranges, offering a wider and more immersive Himalayan panorama. To catch them at their clearest, plan around the <a href="article-best-season-kokhe-danda.html">best time to trek Kokhe Danda</a>.
       </p>
 
       <!-- ── SUB PHOTO 2 ── -->
       <div class="article-photo reveal">
         <div class="article-photo-inner">
-           <img src="kokhe3.jpg" alt="Quiet trail on Kokhe Danda" style="width:100%;height:100%;object-fit:cover;">
-          <!-- REPLACE with: <img src="your-photo-himalayan-panorama.jpg" alt="Himalayan panorama from Kokhe Danda" style="width:100%;height:100%;object-fit:cover;"> -->
-          <div class="article-photo-icon">📷</div>
-          
+          <img src="kokhe3.jpg" alt="Himalayan panorama from Kokhe Danda" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="article-photo-caption">Aerial view from Kokhe Danda · Parbat, Nepal</div>
       </div>
@@ -928,7 +837,7 @@
       </p>
 
       <p>
-        On the other hand, the Kokhe Danda Trek remains largely untouched. The trail takes you through forests, ridgelines, and traditional villages, making the journey itself just as rewarding as the destination.
+        On the other hand, the Kokhe Danda Trek remains largely untouched. The trail takes you through forests, ridgelines, and traditional villages, making the journey itself just as rewarding as the destination. See how each day unfolds in the <a href="Kokhe-Danda-Trek.html">5-day Kokhe Danda Trek itinerary</a>.
       </p>
 
       <!-- ── SECTION 5 ── -->
@@ -939,7 +848,7 @@
       </p>
 
       <p>
-        You may even find yourself having an entire homestay to yourself, allowing for meaningful interactions with local families and a deeper understanding of their daily lives.
+        You may even find yourself having an entire homestay to yourself, allowing for meaningful interactions with local families and a deeper understanding of their daily lives. A <a href="article-why-guided-trek-kokhe-danda.html">local guide</a> makes those conversations even richer.
       </p>
 
       <!-- ── SECTION 6 ── -->
@@ -948,6 +857,19 @@
       <p>
         Both treks are relatively affordable, but the Kokhe Danda Trek offers better value in terms of experience. While Poon Hill is more accessible and shorter, Kokhe Danda provides a richer and more immersive journey without the crowds.
       </p>
+
+      <p>
+        The guided 5-day trek starts from $350 per person and includes private transport from Pokhara, homestays, three meals a day, and a guide and porter — and no trekking permit is needed. See the full <a href="Kokhe-Danda-Trek.html">Kokhe Danda Trek cost and inclusions</a>. Short on time? The <a href="Short-Kokhe-Danda-Trek.html">3-day Short Kokhe Danda Trek</a> fits the same window as a typical Poon Hill trip, while the <a href="Short-Multiple-Viewpoints-Trek.html">6-day Multiple Viewpoints Trek</a> adds more sunrises.
+      </p>
+
+      <!-- ── TREK CTA ── -->
+      <div class="trek-cta-strip reveal">
+        <div class="trek-cta-text">
+          <span class="trek-cta-label">The Poon Hill Alternative</span>
+          <div class="trek-cta-title">Kokhe Danda Trek – 5 Days: itinerary, cost &amp; what's included</div>
+        </div>
+        <a href="Kokhe-Danda-Trek.html" class="trek-cta-btn">View the Trek →</a>
+      </div>
 
       <!-- ── WHICH ONE ── -->
       <h2>Kokhe Danda vs Poon Hill: Which One is Right for You?</h2>
@@ -961,11 +883,8 @@
       <!-- ── CONCLUSION ── -->
       <div class="final-thought reveal">
         <p>As trekking in Nepal continues to evolve, destinations like Kokhe Danda are becoming increasingly valuable for those who want to experience the Himalayas in their true form.</p>
-        <p>If you're looking to escape the crowds and discover a hidden gem, the Kokhe Danda Trek is the perfect choice.</p>
-        
+        <p>If you're looking to escape the crowds and discover a hidden gem, the <a href="Kokhe-Danda-Trek.html">Kokhe Danda Trek</a> is the perfect choice.</p>
       </div>
-
-     
 
       <div class="article-tags">
         <span class="tag">Trek Guide</span>
@@ -1014,13 +933,39 @@
         <div class="book-widget">
           <div class="book-widget-title">Ready to Walk<br><em>the Quiet Ridge?</em></div>
           <p>Book directly with Discover Parbat — the locals who built this trail.</p>
-          <a href="https://www.discoverparbat.com" target="_blank" rel="noopener" class="book-widget-btn">Book the Trek</a>
+          <a href="Kokhe-Danda-Trek.html" class="book-widget-btn">See Itinerary &amp; Cost</a>
+          <a href="https://www.discoverparbat.com" target="_blank" rel="noopener" class="book-widget-link">Book the Trek</a>
           <div class="book-widget-sub">discoverparbat.com</div>
+        </div>
+
+        <!-- Our treks -->
+        <div class="sidebar-widget">
+          <div class="widget-label">Choose Your Trek</div>
+          <a href="Kokhe-Danda-Trek.html" class="related-item">
+            <span class="related-cat">Most Popular · 5 Days</span>
+            <span class="related-title">Kokhe Danda Classic Trek</span>
+            <span class="related-time">Max 3,310m · Easy</span>
+          </a>
+          <a href="Short-Kokhe-Danda-Trek.html" class="related-item">
+            <span class="related-cat">Short · 3 Days</span>
+            <span class="related-title">Short Kokhe Danda Trek</span>
+            <span class="related-time">Same length as Poon Hill</span>
+          </a>
+          <a href="Short-Multiple-Viewpoints-Trek.html" class="related-item">
+            <span class="related-cat">Extended · 6 Days</span>
+            <span class="related-title">Multiple Viewpoints Trek</span>
+            <span class="related-time">More ridgelines, more sunrises</span>
+          </a>
         </div>
 
         <!-- Related articles -->
         <div class="sidebar-widget">
           <div class="widget-label">More Articles</div>
+          <a href="article-kokhe-danda-vs-poon-hill.html" class="related-item">
+            <span class="related-cat">Trek Guide</span>
+            <span class="related-title">Kokhe Danda vs Poon Hill: Why the Quiet Ridge Wins</span>
+            <span class="related-time">8 min read</span>
+          </a>
           <a href="article-best-season-kokhe-danda.html" class="related-item">
             <span class="related-cat">Planning</span>
             <span class="related-title">The Best Time to Trek Kokhe Danda — Month by Month</span>
@@ -1031,7 +976,11 @@
             <span class="related-title">What to Pack for Kokhe Danda Trek: A Complete Guide</span>
             <span class="related-time">7 min read</span>
           </a>
-          
+          <a href="article-why-guided-trek-kokhe-danda.html" class="related-item">
+            <span class="related-cat">Trek Guide</span>
+            <span class="related-title">Why We Recommend a Guided Trek to Kokhe Danda</span>
+            <span class="related-time">6 min read</span>
+          </a>
         </div>
 
       </div>
@@ -1114,9 +1063,9 @@
       <div class="footer-col">
         <h4>Treks</h4>
         <ul>
-          <li><a href="Short-kokhe-Danda-Trek.html">Short Trek (3 Days)</a></li>
+          <li><a href="Short-Kokhe-Danda-Trek.html">Short Trek (3 Days)</a></li>
           <li><a href="Kokhe-Danda-Trek.html">Classic Trek (5 Days)</a></li>
-          <li><a href="Multiple-Viewpoints-Trek.html">Extended Trek (6 Days)</a></li>
+          <li><a href="Short-Multiple-Viewpoints-Trek.html">Extended Trek (6 Days)</a></li>
         </ul>
       </div>
       <div class="footer-col">
