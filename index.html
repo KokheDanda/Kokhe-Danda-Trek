@@ -5,111 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ── PRIMARY SEO ─────────────────────────────────────────── -->
-  <title>Kokhe Danda Trek | Best Authentic & Less Touristy Short Trek From Pokhara, Nepal</title>
+  <title>Kokhe Danda Trek | Best Authentic &amp; Less Touristy Short Trek From Pokhara, Nepal</title>
   <meta name="description" content="Kokhe Danda Trek — a 3 to 6 day off-the-beaten-path ridge trek in Parbat, Nepal. Panoramic Annapurna and Dhaulagiri views from 3,310m. Pioneered and guided by Discover Parbat, local experts born on this trail." />
   <meta name="keywords" content="Kokhe Danda Trek, Kokhe Danda Trek from Pokhara, Parbat trekking Nepal, off the beaten path Nepal trek, Dhaulagiri views trek, Annapurna trek alternatives, Discover Parbat, short trek Nepal, Kokhe Danda itinerary" />
   <link rel="canonical" href="https://kokhedandatrek.com/" />
 
   <!-- ── OPEN GRAPH ───────────────────────────────────────────── -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Kokhe Danda Trek | Best Authentic & Less Touristy Short Trek From Pokhara, Nepal" />
+  <meta property="og:title" content="Kokhe Danda Trek | Best Authentic &amp; Less Touristy Short Trek From Pokhara, Nepal" />
   <meta property="og:description" content="A 3–6 day off-the-beaten-path trek in Parbat, Nepal — panoramic Annapurna and Dhaulagiri views from 3,310m. Pioneered by Discover Parbat." />
-  <meta property="og:image" content="kokhe.jpg" />
+  <meta property="og:image" content="https://kokhedandatrek.com/kokhe.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://kokhedandatrek.com/" />
   <meta property="og:site_name" content="Kokhe Danda Trek" />
 
   <!-- ── TWITTER CARD ─────────────────────────────────────────── -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Kokhe Danda Trek | Best Authentic And Less Touristy Trek From Pokhara, Nepal" />
+  <meta name="twitter:title" content="Kokhe Danda Trek | Best Authentic &amp; Less Touristy Short Trek From Pokhara, Nepal" />
   <meta name="twitter:description" content="A 3–6 day off-the-beaten-path trek in Parbat, Nepal — panoramic Annapurna and Dhaulagiri views from 3,310m." />
   <meta name="twitter:image" content="https://kokhedandatrek.com/kokhe.jpg" />
 
-  <link rel="icon" type="image/png" href="favicon.png" sizes="512x512">
-  <link rel="icon" type="image/png" href="favicon_64.png" sizes="64x64">
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512">
+  <link rel="icon" type="image/png" href="/favicon_64.png" sizes="64x64">
 
-  <!-- ── SCHEMA: TouristTrip ──────────────────────────────────── -->
+  <!-- ── SCHEMA: WebSite + Organization + trek list ───────────── -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Kokhe Danda Trek",
-    "description": "A 3 to 6 day off-the-beaten-path trekking trail in Parbat District, Nepal, offering panoramic views of Annapurna and Dhaulagiri from 3,310m altitude. Pioneered by Discover Parbat, a local trekking company born in Parbat.",
-    "url": "https://kokhedandatrek.com",
-    "image": "https://kokhedandatrek.com/kokhe.jpg",
-    "touristType": ["Adventure trekkers", "First-time trekkers", "Cultural travelers", "Family trekkers"],
-    "itinerary": {
-      "@type": "ItemList",
-      "name": "Kokhe Danda Classic Trek Itinerary",
-      "numberOfItems": 5,
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Drive Pokhara to Banau – Trek to Haljure (2,445m)" },
-        { "@type": "ListItem", "position": 2, "name": "Haljure to Lespar to Sarga (2,400m)" },
-        { "@type": "ListItem", "position": 3, "name": "Sarga to Jaljala to Kokhe Danda (3,310m)" },
-        { "@type": "ListItem", "position": 4, "name": "Kokhe Danda to Hampal to Phalame Danda (2,300m)" },
-        { "@type": "ListItem", "position": 5, "name": "Phalame Danda to Beni to Pokhara" }
-      ]
-    },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Discover Parbat",
-      "url": "https://www.discoverparbat.com",
-      "email": "info@discoverparbat.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "NP",
-        "addressRegion": "Gandaki Province",
-        "addressLocality": "Parbat District"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://kokhedandatrek.com/#website",
+        "name": "Kokhe Danda Trek",
+        "url": "https://kokhedandatrek.com/",
+        "description": "Official guide to the Kokhe Danda Trek in Parbat, Nepal — pioneered by Discover Parbat.",
+        "publisher": { "@id": "https://discoverparbat.com/#organization" }
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "50"
+      {
+        "@type": "TravelAgency",
+        "@id": "https://discoverparbat.com/#organization",
+        "name": "Discover Parbat",
+        "url": "https://discoverparbat.com/",
+        "logo": "https://discoverparbat.com/logo.png",
+        "email": "info@discoverparbat.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "NP",
+          "addressRegion": "Gandaki Province",
+          "addressLocality": "Parbat District"
+        },
+        "sameAs": [
+          "https://www.facebook.com/discoverparbat",
+          "https://maps.app.goo.gl/wJ8wzmghg8FJQt8T8"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Kokhe Danda Trek options",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Short Kokhe Danda Trek – 3 Days", "url": "https://kokhedandatrek.com/Short-Kokhe-Danda-Trek" },
+          { "@type": "ListItem", "position": 2, "name": "Kokhe Danda Classic Trek – 5 Days", "url": "https://kokhedandatrek.com/Kokhe-Danda-Trek" },
+          { "@type": "ListItem", "position": 3, "name": "Kokhe Danda Extended Trek – 6 Days", "url": "https://kokhedandatrek.com/Kokhe-Danda-Extended-Trek" }
+        ]
       }
-    },
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": "380",
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.discoverparbat.com/Kokhe-Danda-Trek.html"
-    }
-  }
-  </script>
-
-  <!-- ── SCHEMA: WebSite ──────────────────────────────────────── -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Kokhe Danda Trek",
-    "url": "https://kokhedandatrek.com",
-    "description": "Official guide to the Kokhe Danda Trek in Parbat, Nepal — pioneered by Discover Parbat.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Discover Parbat",
-      "url": "https://www.discoverparbat.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.discoverparbat.com/logo.png"
-      }
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://kokhedandatrek.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-
-  <!-- ── SCHEMA: BreadcrumbList ───────────────────────────────── -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://kokhedandatrek.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Kokhe Danda Trek", "item": "https://kokhedandatrek.com/Kokhe-Danda-Trek.html" }
     ]
   }
   </script>
@@ -421,7 +380,7 @@
 <body>
 
   <!-- FLOATING BOOK BUTTON -->
-  <a href="https://www.discoverparbat.com/contact.html" class="float-book" rel="noopener">⛺ Book the Trek</a>
+  <a href="https://discoverparbat.com/contact" class="float-book" rel="noopener">⛺ Book the Trek</a>
 
   <!-- NAV -->
   <nav aria-label="Main navigation">
@@ -430,9 +389,10 @@
       <span class="logo-sub">by Discover Parbat</span>
     </a>
     <ul class="nav-links">
-      <li><a href="About-The-Trek.html">About</a></li>
-      <li><a href="Articles.html">Articles</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="/#treks">Treks</a></li>
+      <li><a href="/About-The-Trek">About</a></li>
+      <li><a href="/Articles">Articles</a></li>
+      <li><a href="/gallery">Gallery</a></li>
     </ul>
   </nav>
 
@@ -442,15 +402,15 @@
     <div class="stars" aria-hidden="true"></div>
 
     <div class="slideshow" aria-hidden="true">
-      <div class="slide active" style="background-image: url('kokhe.jpg');"><div class="slide-overlay"></div></div>
-      <div class="slide" style="background-image: url('kokhe1.jpg');"><div class="slide-overlay"></div></div>
-      <div class="slide" style="background-image: url('kokhe2.jpg');"><div class="slide-overlay"></div></div>
-      <div class="slide" style="background-image: url('kokhe23.jpg');"><div class="slide-overlay"></div></div>
-      <div class="slide" style="background-image: url('kokhe24.jpg');"><div class="slide-overlay"></div></div>
-      <div class="slide" style="background-image: url('kokhe25.jpg');"><div class="slide-overlay"></div></div>
+      <div class="slide active" style="background-image: url('/kokhe.jpg');"><div class="slide-overlay"></div></div>
+      <div class="slide" style="background-image: url('/kokhe1.jpg');"><div class="slide-overlay"></div></div>
+      <div class="slide" style="background-image: url('/kokhe2.jpg');"><div class="slide-overlay"></div></div>
+      <div class="slide" style="background-image: url('/kokhe23.jpg');"><div class="slide-overlay"></div></div>
+      <div class="slide" style="background-image: url('/kokhe24.jpg');"><div class="slide-overlay"></div></div>
+      <div class="slide" style="background-image: url('/kokhe25.jpg');"><div class="slide-overlay"></div></div>
     </div>
 
-    <img src="kokhe.jpg" alt="Panoramic sunrise view of Annapurna and Dhaulagiri from Kokhe Danda ridge, Parbat District, Nepal" width="1200" height="800" loading="eager" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;z-index:0;" />
+    <img src="/kokhe.jpg" alt="Panoramic sunrise view of Annapurna and Dhaulagiri from Kokhe Danda ridge, Parbat District, Nepal" width="1200" height="800" loading="eager" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;z-index:0;" />
 
     <svg class="mountain-svg" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
       <path d="M0,320 L0,200 L120,140 L200,180 L320,80 L420,140 L500,100 L580,160 L680,60 L780,120 L860,70 L940,130 L1040,50 L1140,110 L1220,75 L1320,140 L1440,90 L1440,320 Z" fill="rgba(163,184,153,0.12)"/>
@@ -473,6 +433,7 @@
         <span class="tag">Parbat District</span>
       </div>
       <div class="hero-ctas">
+        <a href="#treks" class="btn-primary">See the Treks</a>
         <a href="#about" class="btn-ghost">Explore More</a>
       </div>
     </div>
@@ -495,7 +456,7 @@
   <!-- SEO INTRO -->
   <section class="seo-intro" aria-label="About Kokhe Danda Trek">
     <div class="section-inner">
-      <p>The <strong>Kokhe Danda Trek</strong> is a 3 to 6 day off-the-beaten-path ridge trek in <strong>Parbat District, Nepal</strong>, reaching a maximum altitude of 3,310 metres. Situated 100 metres higher than the famous Poon Hill, Kokhe Danda offers a truly panoramic viewpoint of the <strong>Annapurna and Dhaulagiri mountain ranges</strong> — yet sees a fraction of the crowds. Pioneered by <strong>Discover Parbat</strong>, this trail was opened to share one of western Nepal's best-kept secrets with the world.</p>
+      <p>The <strong>Kokhe Danda Trek</strong> is a 3 to 6 day off-the-beaten-path ridge trek in <strong>Parbat District, Nepal</strong>, reaching a maximum altitude of 3,310 metres at Kokhe Danda itself. Situated 100 metres higher than the famous Poon Hill, Kokhe Danda offers a truly panoramic viewpoint of the <strong>Annapurna and Dhaulagiri mountain ranges</strong> — yet sees a fraction of the crowds. Pioneered by <strong>Discover Parbat</strong>, this trail was opened to share one of western Nepal's best-kept secrets with the world.</p>
       <p>Starting from <strong>Pokhara</strong>, the trek winds through rhododendron forests, Magar village homestays, and open ridge-top meadows before arriving at the Kokhe Danda summit for breathtaking sunrise views over three eight-thousanders: Dhaulagiri, Annapurna, and Manaslu. Suitable for first-time trekkers and seasoned walkers alike, this is one of the most rewarding short treks in Nepal.</p>
     </div>
   </section>
@@ -507,7 +468,7 @@
         <div class="about-label">The Story Behind the Trek</div>
         <h2 class="about-heading">A Ridge Known<br>to <em>Few, Loved by All</em></h2>
         <p class="about-para">Kokhe Danda — meaning "Corner of a hill" — has been a sacred passage for locals and herders for centuries. Weaving through sub-alpine meadows, dense rhododendron groves, and a series of panoramic viewpoints overlooking the Dhaulagiri and Annapurna massifs, this trail was designed by Discover Parbat to share one of Parbat's best-kept secrets with the world — responsibly, authentically, and unforgettably.</p>
-        <a href="About-The-Trek.html" class="btn-primary">Read the Full Story →</a>
+        <a href="/About-The-Trek" class="btn-primary">Read the Full Story →</a>
       </div>
       <div class="about-right reveal reveal-delay-2">
         <div class="about-card">
@@ -515,7 +476,7 @@
             <div class="stat-item">
               <div class="stat-unit">Altitude</div>
               <div class="stat-num">3,310<span style="font-size:1rem">m</span></div>
-              <div class="stat-label">Maximum elevation</div>
+              <div class="stat-label">Kokhe Danda summit</div>
             </div>
             <div class="stat-item">
               <div class="stat-unit">Duration</div>
@@ -548,8 +509,8 @@
         <h2 class="section-title">Three Ways to<br><em>Walk the Ridge</em></h2>
       </div>
       <div class="trek-grid">
-        <a href="Short-Kokhe-Danda-Trek.html" class="trek-card reveal reveal-delay-1">
-          <div class="trek-thumb" style="background-image: url('kokhe3.jpg');" role="img" aria-label="Short Kokhe Danda Trek trail scenery">
+        <a href="/Short-Kokhe-Danda-Trek" class="trek-card reveal reveal-delay-1">
+          <div class="trek-thumb" style="background-image: url('/kokhe3.jpg');" role="img" aria-label="Short Kokhe Danda Trek trail scenery">
             <div class="trek-thumb-overlay"></div>
             <span class="thumb-icon" aria-hidden="true">🏔</span>
             <span class="difficulty-badge badge-easy">Easy</span>
@@ -560,15 +521,15 @@
               <div class="trek-meta-item"><span aria-hidden="true">⏱</span> 3 Days</div>
               <div class="trek-meta-item"><span aria-hidden="true">↑</span> 3,310m</div>
             </div>
-            <p class="trek-excerpt">A weekend escape for first-timers and families. Follow the lower ridgeline through oak forests with sweeping valley views and warm village hospitality.</p>
+            <p class="trek-excerpt">A long-weekend escape. Climb straight to the Kokhe Danda ridge on day one, then descend to a Magar family homestay in Lespar for a momo-making evening.</p>
             <span class="trek-link">Explore Trek</span>
           </div>
         </a>
-        <a href="Kokhe-Danda-Trek.html" class="trek-card reveal reveal-delay-2">
-          <div class="trek-thumb" style="background-image: url('kokhe4.jpg');" role="img" aria-label="Kokhe Danda Classic Trek ridge views">
+        <a href="/Kokhe-Danda-Trek" class="trek-card reveal reveal-delay-2">
+          <div class="trek-thumb" style="background-image: url('/kokhe4.jpg');" role="img" aria-label="Kokhe Danda Classic Trek ridge views">
             <div class="trek-thumb-overlay"></div>
             <span class="thumb-icon" aria-hidden="true">⛰</span>
-            <span class="difficulty-badge badge-moderate">Moderate</span>
+            <span class="difficulty-badge badge-easy">Easy</span>
           </div>
           <div class="trek-body">
             <h3 class="trek-name">Kokhe Danda Classic Trek</h3>
@@ -576,12 +537,12 @@
               <div class="trek-meta-item"><span aria-hidden="true">⏱</span> 5 Days</div>
               <div class="trek-meta-item"><span aria-hidden="true">↑</span> 3,310m</div>
             </div>
-            <p class="trek-excerpt">The signature experience. Cross the full Kokhe Danda ridge through rhododendron forests and open meadows with iconic Dhaulagiri and Annapurna panoramas.</p>
+            <p class="trek-excerpt">The signature experience. Haljure, Lespar and Sarga homestays, the full climb to Kokhe Danda through rhododendron forest, and a quiet exit via Phalame Danda. No permits needed.</p>
             <span class="trek-link">Explore Trek</span>
           </div>
         </a>
-        <a href="Short-Multiple-Viewpoints-Trek.html" class="trek-card reveal reveal-delay-3">
-          <div class="trek-thumb" style="background-image: url('kokhe21.jpg');" role="img" aria-label="Kokhe Danda Extended Trek panoramic viewpoint">
+        <a href="/Kokhe-Danda-Extended-Trek" class="trek-card reveal reveal-delay-3">
+          <div class="trek-thumb" style="background-image: url('/kokhe21.jpg');" role="img" aria-label="Kokhe Danda Extended Trek panoramic viewpoint">
             <div class="trek-thumb-overlay"></div>
             <span class="thumb-icon" aria-hidden="true">🗻</span>
             <span class="difficulty-badge badge-moderate">Moderate</span>
@@ -590,9 +551,9 @@
             <h3 class="trek-name">Kokhe Danda Extended Trek</h3>
             <div class="trek-meta">
               <div class="trek-meta-item"><span aria-hidden="true">⏱</span> 6 Days</div>
-              <div class="trek-meta-item"><span aria-hidden="true">↑</span> 3,635m</div>
+              <div class="trek-meta-item"><span aria-hidden="true">↑</span> 3,650m</div>
             </div>
-            <p class="trek-excerpt">The full ridge traverse plus a sacred lake detour. For trekkers seeking true immersion in Parbat's remote highland landscapes and ancient pilgrim routes.</p>
+            <p class="trek-excerpt">Approach Kokhe Danda the long way: from Ghandruk over Dobato and the Muldai Viewpoint, through Ghorepani and a crowd-free Poon Hill, then along the ridge into Parbat.</p>
             <span class="trek-link">Explore Trek</span>
           </div>
         </a>
@@ -605,10 +566,10 @@
     <div class="section-inner">
       <p class="strip-heading">The ridge in every season — a trail unlike any other.</p>
       <div class="photo-row">
-        <div class="photo-cell" style="background-image: url('kokhe6.jpg');" role="img" aria-label="Rhododendron forest on Kokhe Danda Trek trail"><div class="photo-cell-overlay"></div></div>
-        <div class="photo-cell" style="background-image: url('kokhe7.jpg');" role="img" aria-label="Village homestay on Kokhe Danda Trek, Parbat Nepal"><div class="photo-cell-overlay"></div></div>
-        <div class="photo-cell" style="background-image: url('kokhe8.jpg');" role="img" aria-label="Mountain views from Kokhe Danda ridge"><div class="photo-cell-overlay"></div></div>
-        <div class="photo-cell" style="background-image: url('kokhe9.jpg');" role="img" aria-label="Sunrise over Annapurna range seen from Kokhe Danda, Nepal"><div class="photo-cell-overlay"></div></div>
+        <div class="photo-cell" style="background-image: url('/kokhe6.jpg');" role="img" aria-label="Rhododendron forest on Kokhe Danda Trek trail"><div class="photo-cell-overlay"></div></div>
+        <div class="photo-cell" style="background-image: url('/kokhe7.jpg');" role="img" aria-label="Village homestay on Kokhe Danda Trek, Parbat Nepal"><div class="photo-cell-overlay"></div></div>
+        <div class="photo-cell" style="background-image: url('/kokhe8.jpg');" role="img" aria-label="Mountain views from Kokhe Danda ridge"><div class="photo-cell-overlay"></div></div>
+        <div class="photo-cell" style="background-image: url('/kokhe9.jpg');" role="img" aria-label="Sunrise over Annapurna range seen from Kokhe Danda, Nepal"><div class="photo-cell-overlay"></div></div>
       </div>
     </div>
   </section>
@@ -628,11 +589,11 @@
           <span class="dp-trust-item">All homestays arranged directly</span>
           <span class="dp-trust-item">Responsible &amp; community-led tourism</span>
         </div>
-        <a href="https://www.discoverparbat.com" target="_blank" rel="noopener" class="dp-book-btn">
+        <a href="https://discoverparbat.com/contact" target="_blank" rel="noopener" class="dp-book-btn">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          Visit Discover Parbat
+          Book with Discover Parbat
         </a>
-        <a href="https://www.discoverparbat.com" target="_blank" rel="noopener" class="dp-logo-link">discoverparbat.com</a>
+        <a href="https://discoverparbat.com/" target="_blank" rel="noopener" class="dp-logo-link">discoverparbat.com</a>
       </div>
     </div>
   </section>
@@ -641,7 +602,7 @@
   <section class="article-section" id="articles">
     <div class="section-inner">
       <div class="article-image-wrap reveal">
-        <div class="article-image" style="background-image: url('kokhe2.jpg');" role="img" aria-label="Kokhe Danda Ridge, Parbat, Nepal"></div>
+        <div class="article-image" style="background-image: url('/kokhe2.jpg');" role="img" aria-label="Kokhe Danda Ridge, Parbat, Nepal"></div>
         <div class="article-image-overlay"></div>
         <span class="article-image-caption">Kokhe Danda Ridge · Parbat, Nepal</span>
       </div>
@@ -660,8 +621,8 @@
           <p>The Kokhe Danda Trek is one of Nepal's hidden gems — peaceful, scenic, and still untouched by heavy commercialization. Unlike some trekking regions, hiring a guide here is not enforced. You're free to explore independently.</p>
         </div>
         <div class="article-ctas">
-          <a href="article-why-guided-trek-kokhe-danda.html" class="btn-article">Read Full Article</a>
-          <a href="Articles.html" class="btn-all-articles">Read More Articles</a>
+          <a href="/article-why-guided-trek-kokhe-danda" class="btn-article">Read Full Article</a>
+          <a href="/Articles" class="btn-all-articles">Read More Articles</a>
         </div>
       </div>
     </div>
@@ -670,7 +631,6 @@
   <!-- ── FEATURED ARTICLE 2 ── -->
   <section class="article-section">
     <div class="section-inner">
-      <!-- Image on right for visual variety -->
       <div class="article-content reveal">
         <div class="article-eyebrow">Trek Guide</div>
         <h2 class="article-title">Why Kokhe Danda Trek is a<br>Better Alternative to<br><em>Poon Hill Trek</em></h2>
@@ -686,12 +646,12 @@
           <p>With increasing popularity and rapid development, the Poon Hill experience has changed significantly. Today, many trekkers are searching for a quieter, more authentic alternative — and Kokhe Danda is exactly that.</p>
         </div>
         <div class="article-ctas">
-          <a href="why-kokhe-danda-trek-is-better-alternative-to-poonhill-trek.html" class="btn-article">Read Full Article</a>
-          <a href="Articles.html" class="btn-all-articles">Read More Articles</a>
+          <a href="/why-kokhe-danda-trek-is-better-alternative-to-poonhill-trek" class="btn-article">Read Full Article</a>
+          <a href="/Articles" class="btn-all-articles">Read More Articles</a>
         </div>
       </div>
       <div class="article-image-wrap reveal reveal-delay-2">
-        <div class="article-image" style="background-image: url('kokhe1.jpg');" role="img" aria-label="Kokhe Danda vs Poon Hill — the quiet ridge alternative"></div>
+        <div class="article-image" style="background-image: url('/kokhe1.jpg');" role="img" aria-label="Kokhe Danda vs Poon Hill — the quiet ridge alternative"></div>
         <div class="article-image-overlay"></div>
         <span class="article-image-caption">The quiet ridge · Kokhe Danda, Parbat</span>
       </div>
@@ -709,17 +669,18 @@
       <div class="footer-col">
         <h4>Explore</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Articles.html">Articles</a></li>
-          <li><a href="About-The-Trek.html">About</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/About-The-Trek">About</a></li>
+          <li><a href="/Articles">Articles</a></li>
+          <li><a href="/gallery">Gallery</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Treks</h4>
         <ul>
-          <li><a href="Short-Kokhe-Danda-Trek.html">Short Trek (3 Days)</a></li>
-          <li><a href="Kokhe-Danda-Trek.html">Classic Trek (5 Days)</a></li>
-          <li><a href="Short-Multiple-Viewpoints-Trek.html">Extended Trek (6 Days)</a></li>
+          <li><a href="/Short-Kokhe-Danda-Trek">Short Trek (3 Days)</a></li>
+          <li><a href="/Kokhe-Danda-Trek">Classic Trek (5 Days)</a></li>
+          <li><a href="/Kokhe-Danda-Extended-Trek">Extended Trek (6 Days)</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -727,12 +688,12 @@
         <ul>
           <li><a href="https://www.facebook.com/discoverparbat" target="_blank" rel="noopener">Facebook</a></li>
           <li><a href="https://maps.app.goo.gl/wJ8wzmghg8FJQt8T8" target="_blank" rel="noopener">Google</a></li>
-          <li><a href="mailto:discoverparbat@gmail.com">Email Us</a></li>
+          <li><a href="mailto:info@discoverparbat.com">Email Us</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Kokhe Danda Trek · Discover Parbat. All rights reserved.</p>
+      <p>© 2026 Kokhe Danda Trek · Discover Parbat. All rights reserved.</p>
       <p class="footer-tagline">Walk slow, go far.</p>
     </div>
   </footer>
@@ -768,7 +729,7 @@
     }, { threshold: 0.15 });
     revealEls.forEach(el => obs.observe(el));
 
-    // Nav shadow on scroll
+    // Nav background on scroll
     window.addEventListener('scroll', () => {
       document.querySelector('nav').style.background =
         window.scrollY > 60
