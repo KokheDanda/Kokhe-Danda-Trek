@@ -1,0 +1,12 @@
+# Old / broken links → correct pages (Cloudflare Pages)
+/about.html                            /About-The-Trek              301
+/about                                 /About-The-Trek              301
+/articles.html                         /Articles                    301
+/treks.html                            /#treks                      301
+/treks                                 /#treks                      301
+/cancellation.html                     https://discoverparbat.com/cancellation  301
+/cancellation                          https://discoverparbat.com/cancellation  301
+
+# 6-day trek renamed
+/Short-Multiple-Viewpoints-Trek.html   /Kokhe-Danda-Extended-Trek   301
+/Short-Multiple-Viewpoints-Trek        /Kokhe-Danda-Extended-Trek   301
