@@ -10,3 +10,12 @@
 # 6-day trek renamed
 /Short-Multiple-Viewpoints-Trek.html   /Kokhe-Danda-Extended-Trek   301
 /Short-Multiple-Viewpoints-Trek        /Kokhe-Danda-Extended-Trek   301
+
+# Trek pages now live on Discover Parbat (one trek page per trek, avoids two sites competing)
+/Kokhe-Danda-Trek                      https://discoverparbat.com/kokhe-danda-trek        301
+/Kokhe-Danda-Trek.html                 https://discoverparbat.com/kokhe-danda-trek        301
+/kokhe-danda-trek                      https://discoverparbat.com/kokhe-danda-trek        301
+/Short-Kokhe-Danda-Trek                https://discoverparbat.com/short-kokhe-danda-trek  301
+/Short-Kokhe-Danda-Trek.html           https://discoverparbat.com/short-kokhe-danda-trek  301
+/Short-kokhe-Danda-Trek.html           https://discoverparbat.com/short-kokhe-danda-trek  301
+/short-kokhe-danda-trek                https://discoverparbat.com/short-kokhe-danda-trek  301
